@@ -1,0 +1,587 @@
+.header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 300px;
+  border-bottom: 1px solid #FFF;
+  height: 106px;
+  overflow: visible;
+  position: relative;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-self: start;
+  width: 100%;
+  height: 100%;
+  font-family: "Reem";
+  border-right: 1px solid #FFF;
+  grid-column: 1;
+}
+
+.header .logo h1 {
+  height: 42px;
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 24px;
+}
+
+.header .navigation {
+  display: flex;
+  justify-self: center;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+  padding: 2em;
+  padding-bottom: 0;
+  padding-top: 0;
+  gap: 0.5em;
+  margin: 0 1em;
+  grid-column: 2 / 4;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+
+.navItem {
+  position: relative;
+  display: inline-block;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 20px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Roboto Regular";
+}
+
+.arrow {
+  height: 12px;
+  width: 12px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.rotated {
+  transform: rotate(180deg);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 250px;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  padding: 8px 0;
+  animation: dropdownFade 0.2s ease;
+  padding-top: 8px;
+  color: #000;
+}
+
+.dropdownMenu a {
+  display: block;
+  padding: 10px 16px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  border: none;
+  font-family: "Roboto Regular";
+}
+
+.dropdownMenu a:hover {
+  background-color: #f8f9fa;
+  color: #000;
+  padding-left: 20px;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header .navigation a:not(.navLink) {
+  font-size: 20px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Roboto Regular";
+}
+
+.header .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: end;
+  border-left: 1px solid #FFF;
+  height: 100%;
+  width: 100%;
+  gap: 2em;
+  grid-column: 4;
+}
+
+.header .contact span:first-child {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+}
+
+.header .contact span:nth-child(2) {
+  user-select: none;
+  cursor: pointer;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.header .contact .languageMenu img {
+  height: 14px;
+  width: 14px;
+}
+
+.languageContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.languageMenu {
+  user-select: none;
+  cursor: pointer;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  font-family: "Roboto Regular";
+  font-size: 16px;
+}
+
+.languageMenu:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.languageDropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  min-width: 80px;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  padding: 8px 0;
+  animation: dropdownFade 0.2s ease;
+  margin-top: 5px;
+}
+
+.languageOption {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  background: none;
+  border: none;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-align: left;
+  font-family: "Roboto Regular";
+}
+
+.languageOption:hover {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.languageOption.active {
+  background-color: #e9ecef;
+  color: #000;
+  font-weight: bold;
+}
+
+/* ===== АДАПТАЦИЯ ДЛЯ 1250px ===== */
+@media (max-width: 1250px) {
+  .header {
+    grid-template-columns: 1fr 4fr 300px;
+    height: 90px;
+  }
+
+  .header .logo h1 {
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 36px;
+    font-size: 22px;
+  }
+
+  .header .navigation {
+    grid-column: 2;
+    padding: 1.5em;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0 0.5em;
+  }
+
+  .header .navigation a:not(.navLink),
+  .navLink {
+    font-size: 18px;
+  }
+
+  .header .contact {
+    grid-column: 3;
+    gap: 1.5em;
+  }
+
+  .header .contact span:first-child {
+    font-size: 15px;
+  }
+
+  .dropdownMenu {
+    min-width: 220px;
+  }
+
+  .dropdownMenu a {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .header {
+    grid-template-columns: 1fr 3fr 215px; /* Уменьшаем до 350px */
+  }
+
+  .header .navigation {
+    padding: 1.2em;
+  }
+
+  .header .navigation a:not(.navLink),
+  .navLink {
+    font-size: 17px;
+  }
+
+  .header .contact span:first-child {
+    font-size: 14px;
+  }
+}
+
+/* ===== АДАПТАЦИЯ ДЛЯ 1024px ===== */
+@media (max-width: 1024px) {
+  .header {
+    grid-template-columns: auto 1fr auto;
+    height: 80px;
+    padding: 0 20px;
+  }
+
+  .header .logo {
+    border-right: none;
+  }
+
+  .header .logo h1 {
+    margin-left: 0;
+    margin-right: 0;
+    height: 32px;
+    font-size: 20px;
+  }
+
+  .header .navigation {
+    justify-content: space-around;
+    padding: 1em;
+    margin: 0;
+  }
+
+  .header .navigation a:not(.navLink),
+  .navLink {
+    font-size: 16px;
+  }
+
+  .header .contact {
+    border-left: none;
+    gap: 1em;
+  }
+
+  .header .contact span:first-child {
+    font-size: 14px;
+  }
+
+  .navLink {
+    gap: 4px;
+  }
+
+  .arrow {
+    height: 10px;
+    width: 10px;
+  }
+
+  .dropdownMenu {
+    min-width: 200px;
+  }
+
+  .languageMenu {
+    font-size: 14px;
+  }
+
+  .languageDropdown {
+    min-width: 70px;
+  }
+
+  .languageOption {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+/* ===== АДАПТАЦИЯ ДЛЯ 900px ===== */
+@media (max-width: 900px) {
+  .header .navigation {
+    gap: 15px;
+  }
+
+  .header .navigation a:not(.navLink),
+  .navLink {
+    font-size: 15px;
+  }
+
+  .header .contact span:first-child {
+    font-size: 13px;
+  }
+}
+
+/* ===== АДАПТАЦИЯ ДЛЯ 768px ===== */
+@media (max-width: 768px) {
+  .header {
+    grid-template-columns: 1fr auto auto;
+    height: 70px;
+    padding: 0 15px;
+    gap: 15px;
+  }
+
+  .header .logo {
+    grid-column: 1;
+  }
+
+  .header .logo h1 {
+    font-size: 18px;
+    height: 28px;
+  }
+
+  .header .navigation {
+    display: none; /* Скрываем основную навигацию */
+  }
+
+  .header .contact {
+    grid-column: 2;
+    gap: 0.5em;
+  }
+
+  .header .contact span:first-child {
+    display: none; /* Скрываем телефон на мобильных */
+  }
+
+  .languageMenu {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+
+  .languageMenu img {
+    height: 12px !important;
+    width: 12px !important;
+  }
+
+  /* Мобильное меню */
+  .mobileMenuToggle {
+    display: block;
+    grid-column: 3;
+    background: none;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+  }
+}
+
+/* ===== МОБИЛЬНОЕ МЕНЮ ===== */
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  z-index: 2000;
+  padding: 80px 20px 20px;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.mobileMenu.active {
+  display: flex;
+}
+
+.mobileMenu a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Roboto Regular";
+  padding: 15px 0;
+  border-bottom: 1px solid #333;
+  transition: color 0.3s ease;
+}
+
+.mobileMenu a:hover {
+  color: #D35400;
+}
+
+.mobileMenuClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #FFF;
+  font-size: 24px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileNavItem {
+  position: relative;
+}
+
+.mobileDropdownMenu {
+  display: none;
+  padding-left: 20px;
+  margin-top: 10px;
+  border-left: 2px solid #D35400;
+}
+
+.mobileDropdownMenu.active {
+  display: block;
+}
+
+.mobileDropdownMenu a {
+  font-size: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #444;
+}
+
+.mobileDropdownToggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 15px 0;
+  border-bottom: 1px solid #333;
+}
+
+.mobileLanguageSelector {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  display: flex;
+  gap: 15px;
+}
+
+.mobileLanguageButton {
+  background: none;
+  border: 1px solid #FFF;
+  color: #FFF;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto Regular";
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.mobileLanguageButton.active {
+  background: #D35400;
+  border-color: #D35400;
+}
+
+.mobileLanguageButton:hover {
+  background: #FFF;
+  color: #000;
+}
+
+/* ===== АДАПТАЦИЯ ДЛЯ 480px ===== */
+@media (max-width: 480px) {
+  .header {
+    height: 60px;
+    padding: 0 10px;
+    gap: 10px;
+  }
+
+  .header .logo h1 {
+    font-size: 16px;
+    height: 24px;
+  }
+
+  .languageMenu {
+    font-size: 13px;
+    padding: 3px 6px;
+  }
+
+  .languageMenu img {
+    height: 10px !important;
+    width: 10px !important;
+  }
+
+  .mobileMenuToggle {
+    font-size: 18px;
+    padding: 3px;
+  }
+
+  .mobileMenu {
+    padding: 70px 15px 15px;
+  }
+
+  .mobileMenu a {
+    font-size: 16px;
+    padding: 12px 0;
+  }
+
+  .mobileDropdownMenu a {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}
+
+/* ===== АДАПТАЦИЯ ДЛЯ 360px ===== */
+@media (max-width: 360px) {
+  .header .logo h1 {
+    font-size: 14px;
+  }
+
+  .languageMenu {
+    font-size: 12px;
+  }
+
+  .mobileMenu {
+    padding: 60px 10px 10px;
+  }
+
+  .mobileMenu a {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,279 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  z-index: 1000;
+  height: 70px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #FFF;
+}
+
+.logo h1 {
+  font-family: "Reem", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.menuButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #FFF;
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 16px;
+}
+
+.menuButton .hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 14px;
+}
+
+.menuButton .hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #FFF;
+  transition: all 0.3s ease;
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  background: #FFF;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+  min-height: 400px;
+}
+
+.mobileMenu.active {
+  right: 0;
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.menuTitle {
+  font-family: "Roboto Regular";
+  color: #000;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.hamburgerIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 16px;
+  height: 12px;
+}
+
+.hamburgerIcon span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 32px;
+  color: #000;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.navLink {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-family: "Roboto Regular", sans-serif;
+  background: none;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+}
+
+.languageSelector {
+  font-size: 16px;
+  color: #000;
+  font-family: "Roboto Regular", sans-serif;
+  padding: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.languageSelector {
+  padding: 20px;
+}
+
+.languageDropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.languageButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
+
+.languageList {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  bottom: 100%;
+  left: 0;
+  background: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 100%;
+  z-index: 1;
+  width: 50px;
+  height: 60px;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.languageLine {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 1px;
+  width: 100%;
+}
+
+.languageOption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  font-family: "Roboto Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  text-align: left;
+}
+
+.languageOption:hover {
+  background: #f0f0f0;
+}
+
+.servicesDropdown {
+  position: relative;
+}
+
+.servicesButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  padding: 20px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.servicesList {
+  background: #f8f8f8;
+  border-bottom: 1px solid #000;
+}
+
+.serviceLink {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  border-top: 1px solid #ddd;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  padding: 15px 20px 15px 30px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.serviceLink:hover {
+  background: #f0f0f0;
+}

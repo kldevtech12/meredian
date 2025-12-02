@@ -1,0 +1,82 @@
+.carouselContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carouselWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  height: 100%;
+  width: 100%;
+  padding: 40px 0;
+  gap: 0;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carouselItem {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 360px;
+  margin: 0 20px;
+  transform-origin: center center;
+}
+
+.carouselImage {
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  transform-origin: center center;
+  display: block;
+}
+
+/* Неактивные элементы */
+.carouselItem:not(.active) .carouselImage {
+  opacity: 0.6;
+  transform: scale(0.85);
+}
+
+/* Активный элемент */
+.carouselItem.active {
+  margin: 0 60px;
+}
+
+.carouselItem.active .carouselImage {
+  transform: scale(1.3);
+  opacity: 1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* Гарантируем, что элементы не смещаются по вертикали */
+.carouselItem,
+.carouselItem.active {
+  align-items: center;
+  justify-content: center;
+}

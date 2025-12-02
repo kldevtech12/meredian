@@ -1,0 +1,126 @@
+.service {
+  color: black;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-right: 40px;
+}
+
+
+.service h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 53.33px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.service p {
+  margin-bottom: 24px;
+  width: 500px;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.service button {
+  border: none;
+  background-color: black;
+  color: #FFF;
+  text-transform: uppercase;
+  width: 240px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.serviceMobile {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+}
+
+.serviceMobile .serviceImage {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.serviceMobile .serviceImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.serviceMobile .serviceContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+  flex: 1;
+  padding: 12px;
+}
+
+.serviceMobile .serviceContent h1 {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #000;
+  width: 100%;
+  height: 54px;
+  margin: 0;
+}
+
+.serviceMobile .serviceContent p {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #333;
+  width: 100%;
+  margin: 0;
+  flex: 1;
+  margin-bottom: 12px;
+}
+
+.serviceMobile .serviceContent button {
+  border: none;
+  background-color: black;
+  color: #FFF;
+  width: 100%;
+  height: 28px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.serviceMobile .serviceContent button span {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}

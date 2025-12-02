@@ -1,0 +1,1152 @@
+{
+  "ru": {
+    "header": {
+      "navigation": [
+        {
+          "title": "Услуги",
+          "services": [
+            "Риэлторские услуги",
+            "Дизайнерские услуги",
+            "Ремонтные услуги",
+            "Cтроительные услуги"
+          ]
+        },
+        {
+          "title": "Контакты",
+          "services": []
+        },
+        {
+          "title": "Оставить заявку",
+          "services": []
+        },
+        {
+          "title": "Позвонить сейчас",
+          "services": []
+        },
+        {
+          "title": "На главную",
+          "services": []
+        }
+      ]
+    },
+    "headerMobile": {
+      "title": "Меню",
+      "navigation": [
+        {
+          "title": "УСЛУГИ",
+          "services": [
+            "Риэлторские услуги",
+            "Дизайнерские услуги",
+            "Ремонтные услуги",
+            "Cтроительные услуги"
+          ]
+        },
+        {
+          "title": "КОНТАКТЫ",
+          "services": []
+        },
+        {
+          "title": "ОСТАВИТЬ ЗАЯВКУ",
+          "services": []
+        },
+        {
+          "title": "ПОЗВОНИТЬ СЕЙЧАС",
+          "services": []
+        },
+        {
+          "title": "НА ГЛАВНУЮ",
+          "services": []
+        }
+      ]
+    },
+    "home": {
+      "title": "Трансформация ПРОСТРАНСТВА и креативные дизайны",
+      "titleInfo": "Полный цикл — от идеи до реализации. Начинаем с нулевого меридиана",
+      "text": "Наша команда с 2017 года решает задачи в сфере недвижимости, дизайна и строительства. Мы подбираем, проектируем, строим и обновляем. Более 300 реализованных проектов – от офисов до жилых и коммерческих пространств.",
+      "textCompany": "о нашей компании",
+      "contactInfoText": "Точность. Идея. Прогресс.",
+      "contactInfoBtn": "Связаться с нами",
+      "carouselImages": ["photo_1_2025-12-02_15-51-02.jpg", "photo_2_2025-12-02_15-51-02.jpg", "photo_3_2025-12-02_15-51-02.jpg", "photo_4_2025-12-02_15-51-02.jpg", "photo_5_2025-12-02_15-51-02.jpg", "photo_6_2025-12-02_15-51-02.jpg"]
+    },
+    "homeMobile": {
+      "title": [
+        "Полный цикл —",
+        "от идеи до реализации.",
+        "Начинаем с нулевого меридиана"
+      ],
+      "text": "Наша команда с 2017 года решает задачи в сфере недвижимости, дизайна и строительства. Мы подбираем, проектируем, строим и обновляем. Более 300 реализованных проектов – от офисов до жилых и коммерческих пространств.",
+      "contactBtn": "Связаться с нами"
+    },
+    "leaveRequests": {
+      "titleForm": "Оставьте заявку сейчас",
+      "labelName": "Имя",
+      "labelPhone": "Телефон",
+      "checkboxTitle": "Тип заказываемой услуги",
+      "checkboxItems": [
+        "Риэлторские услуги",
+        "Дизайнерские услуги",
+        "Ремонтные услуги",
+        "Строительные услуги"
+      ],
+      "sumbitBtn": "Отправить заявку",
+      "titleFormSumbit": "Спасибо за заявку!",
+      "textFormSumbit": "Ваша анкета была успешно отправлена. Наш специалист свяжется с Вами в ближайшее время для консультации",
+      "redirectBtn": "Вернуться на главную",
+      "errorText": "Пожалуйста, выберите хотя бы одну услугу",
+      "privacyError": "Необходимо принять политику конфиденциальности"
+    },
+    "services": [
+      {
+        "title": "Риэлторские услуги",
+        "text": "Недвижимость без лишних хлопот — подбор, проверка и полное юридическое сопровождение",
+        "link": "/realty-services"
+      },
+      {
+        "title": "Дизайнерские услуги",
+        "text": "От стильного «БАЗОВОГО» обновление до премиального дизайна с авторским надзором",
+        "link": "/design-services"
+      },
+      {
+        "title": "Ремонтные услуги",
+        "text": "Прозрачный процесс, точное исполнение и безупречный результат без лишнего вовлечения",
+        "link": "/repair-services"
+      },
+      {
+        "title": "Cтроительные услуги",
+        "text": "Надёжное строительство — от проекта до сдачи, с гарантией качества",
+        "link": "/construction-services"
+      }
+    ],
+    "realty-services": {
+      "title": "Риэлторские услуги— в одних руках",
+      "description": "Поиск, покупка, продажа - надежно и с заботой о ваших интересах",
+      "images": [
+        {
+          "name": "image copy 11.png"
+        },
+        {
+          "name": "image copy 6.png"
+        },
+        {
+          "name": "services3.jpg"
+        }
+      ],
+      "companyInfo": "Как мы работаем",
+      "sectionTitle": "Выберите нужную услугу",
+      "sectionDescription": "Каждое направление  — под ключ: от первого запроса до подписания договора. Индивидуальный подход и выгодные условия",
+      "sectionItems": [
+        {
+          "img": "image copy 8.png",
+          "title": "Покупка и продажа земли",
+          "description": "Подбор земельных участков под строительство и инвестиции. Анализ, юридическая проверка и полное сопровождение сделки"
+        },
+        {
+          "img": "realty-services-item3.png",
+          "title": "Жилая и коммерческая недвижимость",
+          "description": "Квартиры, дома, офисы, склады. Найдём идеальный объект или поможем выгодно продать вашу недвижимость"
+        },
+        {
+          "img": "image copy 9.png",
+          "title": "Аренда жилой и коммерческой недвижимости",
+          "description": "Долгосрочная и краткосрочная аренда для жизни и бизнеса. Гибкие условия, удобное расположение, проверенные объекты"
+        },
+        {
+          "img": "realty-services-item4.png",
+          "title": "Аренда торговых площадей и офисов",
+          "description": "Коммерческие помещения в топовых локациях. Выгодные предложения для вашего бизнеса — быстро, прозрачно, надёжно"
+        }
+      ],
+      "whiteSectionTitle": "Ценим ваше время — начнём без лишних слов",
+      "whiteSectionDescription": "Позвоните или оставьте заявку, и мы предложим персональное решение",
+      "workSectionDescription": "Работаем с теми, кто ценит прозрачность, профессионализм и индивидуальный подход",
+      "workSectionItems": [
+        {
+          "id": "01",
+          "text": "Команда экспертов с глубоким знанием польского рынка недвижимости и широкой практикой в Европе. Работаем с жилой и коммерческой недвижимостью, сопровождая сделки на всех этапах: от подбора объекта до получения ключей"
+        },
+        {
+          "id": "02",
+          "text": "Сотрудничаем со всеми крупными девелоперами Польши, а также с надёжными застройщиками и агентствами в других странах"
+        },
+        {
+          "id": "03",
+          "text": "Каждое направление — под ключ: от первого запроса до подписания договора. Индивидуальный подход и выгодные условия"
+        },
+        {
+          "id": "04",
+          "text": "Мы ценим ваше время и обеспечиваем профессиональное сопровождение на каждом этапе"
+        }
+      ],
+      "whiteSectionImages": [
+        "image copy 7.png"
+      ],
+      "sponsors": [
+        { "img": "realtySponsorsSponsor1.png" },
+        { "img": "realtySponsorsSponsor2.jpg" },
+        { "img": "realtySponsorsSponsor3.png" },
+        { "img": "realtySponsorsSponsor4.png" },
+        { "img": "realtySponsorsSponsor5.png" },
+        { "img": "realtySponsorsSponsor6.png" },
+        { "img": "realtySponsorsSponsor7.png" },
+        { "img": "realtySponsorsSponsor8.png" },
+        { "img": "realtySponsorsSponsor9.png" },
+        { "img": "realtySponsorsSponsor10.png" },
+        { "img": "realtySponsorsSponsor11.png" },
+        { "img": "realtySponsorsSponsor12.png" },
+        { "img": "realtySponsorsSponsor13.png" },
+        { "img": "realtySponsorsSponsor14.png" }
+      ],
+      "inPersonImages": [
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png"
+      ]
+    },
+    "design-services": {
+      "title": "Дизайн, отражающий ваш стиль и цели",
+      "description": "Интерьеры, в которых хочется жить, работать и вдохновлять",
+      "carouselImages": ["photo_1_2025-12-02_16-09-19.jpg", "photo_2_2025-12-02_16-09-19.jpg", "photo_3_2025-12-02_16-09-19.jpg", "photo_4_2025-12-02_16-09-19.jpg", "photo_5_2025-12-02_16-09-19.jpg"],
+      "images": [
+        {
+          "name": "design-services1.png"
+        },
+        {
+          "name": "design-services2.png"
+        },
+        {
+          "name": "services3.jpg"
+        }
+      ],
+      "companyInfo": "Как мы работаем",
+      "sectionTitle": "Выберите тип дизайна",
+      "sectionDescription": "С радостью реализуем все ваши самые смелые идеи — от концепции до последнего штриха, с вниманием к каждому нюансу",
+      "sectionItems": [
+        {
+          "img": "design-services-item1.png",
+          "title": "Базовый",
+          "description": "Подходит для тех, кто хочет обновить интерьер без переплат.\n**Включает**: планировку, подбор стиля, цветовых решений и основных материалов.\nИдеально для косметического ремонта и небольших проектов"
+        },
+        {
+          "img": "design-services-item2.png",
+          "title": "Стандарт",
+          "description": "Полноценный дизайн-проект с визуализациями и чертежами.\n**Включает**: планировку, подбор отделки, мебели, освещения и техники.\nОптимальное решение для квартиры или дома «под ключ»"
+        },
+        {
+          "img": "image copy 2.png",
+          "title": "Премиум",
+          "description": "Расширенный индивидуальный подход с авторским надзором.\n**Включает**: уникальные решения, 3D-визуализация, комплектация, сопровождение на всех этапах реализации.\nДля тех, кто хочет безупречный результат без личного вовлечения"
+        },
+        {
+          "img": "image copy 3.png",
+          "title": "Бизнес",
+          "description": "Дизайн коммерческих пространств: офисы, рестораны, салоны, магазины.\nУпор на эргономику, брендирование, визуальный стиль и работу с потоком клиентов.\nСоздаём пространство, которое работает на ваш бизнес"
+        }
+      ],
+      "whiteSectionTitle": "Ценим ваше время — начнём без лишних слов",
+      "whiteSectionDescription": "Позвоните или оставьте заявку, и мы предложим персональное решение",
+      "workSectionDescription": "Создаем уникальные и функциональные интерьеры для жизни и бизнеса",
+      "workSectionItems": [
+        {
+          "id": "01",
+          "text": "Команда первоклассных дизайнеров и архитекторов, объединённых одной целью: создавать пространства, в которых хочется жить, работать и развиваться"
+        },
+        {
+          "id": "02",
+          "text": "Мы разрабатываем уникальные интерьерные решения для жилых и коммерческих объектов, ориентируясь на стиль, задачи и образ жизни наших клиентов"
+        },
+        {
+          "id": "03",
+          "text": "Каждый проект — это продуманная эстетика, безупречная эргономика и высокое качество исполненияю. С нами ваш проект — в надёжных и талантливых руках"
+        },
+        {
+          "id": "04",
+          "text": "Мы работаем в тесной связке с инженерами, строителями и поставщиками материалов, чтобы идеи на бумаге становились реальными и долговечными интерьерами"
+        }
+      ],
+      "whiteSectionImages": [
+        "services3.jpg",
+        "services3.jpg",
+        "services3.jpg",
+        "services3.jpg",
+        "services3.jpg"
+      ],
+      "sponsors": [
+        { "img": "designSponsorsSponsor1.png" },
+        { "img": "designSponsorsSponsor2.png" },
+        { "img": "designSponsorsSponsor3.png" },
+        { "img": "designSponsorsSponsor4.png" },
+        { "img": "designSponsorsSponsor5.png" },
+        { "img": "designSponsorsSponsor6.png" },
+        { "img": "designSponsorsSponsor7.png" },
+        { "img": "designSponsorsSponsor8.png" },
+        { "img": "designSponsorsSponsor9.png" },
+        { "img": "designSponsorsSponsor10.png" },
+        { "img": "designSponsorsSponsor11.png" },
+        { "img": "designSponsorsSponsor12.png" },
+        { "img": "designSponsorsSponsor13.png" },
+        { "img": "designSponsorsSponsor14.png" }
+      ],
+      "inPersonImages": [
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png"
+      ]
+    },
+    "repair-services": {
+      "title": "Ремонт, объединяющий качество и комфорт",
+      "description": "Профессиональный pемонт жилых и коммерческих помещений",
+      "carouselImages": [
+        "photo_1_2025-12-02_16-25-31.jpg",
+        "photo_2_2025-12-02_16-25-31.jpg",
+        "photo_3_2025-12-02_16-25-31.jpg",
+        "photo_4_2025-12-02_16-25-31.jpg",
+        "photo_5_2025-12-02_16-25-31.jpg",
+        "photo_6_2025-12-02_16-25-31.jpg",
+        "photo_7_2025-12-02_16-25-31.jpg"
+      ],
+      "images": [
+        {
+          "name": "repair-services1.png"
+        },
+        {
+          "name": "repair-services2.png"
+        },
+        {
+          "name": "image copy 5.png"
+        }
+      ],
+      "companyInfo": "Как мы работаем",
+      "sectionTitle": "Выберите стиль реализации",
+      "sectionDescription": "С радостью воплотим ваш ремонт от первого замысла до последнего гвоздя, с заботой о каждом сантиметре",
+      "sectionItems": [
+        {
+          "img": "repair-services-item1.jpg",
+          "title": "Стандарт",
+          "description": "Базовый, качественный ремонт с использованием надежных и проверенных материалов. Оптимальное решение для тех, кто ценит практичность и доступность"
+        },
+        {
+          "img": "repair-services-item2.jpg",
+          "title": "Премиум",
+          "description": "Ремонт с дизайнерскими решениями и улучшенными материалами. Совмещаем эстетику, комфорт и индивидуальный стиль — создаём продуманные и современные интерьеры"
+        },
+        {
+          "img": "repair-services-item3.png",
+          "title": "VIP",
+          "description": "Элитный ремонт премиум-класса с использованием эксклюзивных материалов, индивидуальных дизайнерских разработок и повышенных требований к качеству исполнения. Максимум стиля, уюта и престижа"
+        }
+      ],
+      "whiteSectionTitle": "Ценим ваше время — начнём без лишних слов",
+      "whiteSectionDescription": "Позвоните или оставьте заявку, и мы предложим персональное решение",
+      "workSectionDescription": "Эстетика и комфорт в каждом проекте — от уютных квартир до стильных коммерческих пространств",
+      "workSectionItems": [
+        {
+          "id": "01",
+          "text": "Строительная компания, которая специализируется на ремонте и адаптации жилых и коммерческих помещений в Европе"
+        },
+        {
+          "id": "02",
+          "text": "Наши проекты — это сочетание эстетики, функциональности и качественного исполнения. Мы создаем пространства, которые выглядят эффектно и идеально подходят как для комфортной жизни, так и для ведения бизнеса"
+        },
+        {
+          "id": "03",
+          "text": "Для коммерческой недвижимости — кафе, рестораны, офисы, магазины и другие объекты — мы разрабатываем интерьерные решения, которые подчеркивают имидж и повышают эффективность"
+        },
+        {
+          "id": "04",
+          "text": "Для жилой недвижимости — квартиры, дома, апартаменты — мы создаем уютные, современные и эргономичные интерьеры, ориентируясь на стиль жизни и индивидуальные предпочтения клиента"
+        }
+      ],
+      "whiteSectionImages": [
+        "image copy 5.png"
+      ],
+      "sponsors": [
+        { "img": "repairSponsorsSponsor1.png" },
+        { "img": "repairSponsorsSponsor2.png" },
+        { "img": "repairSponsorsSponsor3.png" },
+        { "img": "repairSponsorsSponsor4.png" },
+        { "img": "repairSponsorsSponsor5.png" },
+        { "img": "repairSponsorsSponsor6.png" },
+        { "img": "repairSponsorsSponsor7.png" },
+        { "img": "repairSponsorsSponsor8.png" },
+        { "img": "repairSponsorsSponsor9.png" },
+        { "img": "repairSponsorsSponsor10.png" },
+        { "img": "repairSponsorsSponsor11.png" },
+        { "img": "repairSponsorsSponsor12.png" },
+        { "img": "repairSponsorsSponsor13.png" },
+        { "img": "repairSponsorsSponsor14.png" }
+      ],
+      "inPersonImages": [
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png"
+      ]
+    },
+    "construction-services": {
+      "title": "Строительные услуги — в одних руках",
+      "description": "От индивидуальных резиденций до масштабных девелоперских проектов",
+      "carouselImages": ["photo_1_2025-12-02_16-34-43.jpg", "photo_2_2025-12-02_16-34-43.jpg", "photo_3_2025-12-02_16-34-43.jpg", "photo_4_2025-12-02_16-34-43.jpg"],
+      "images": [
+        {
+          "name": "construction-services1.jpg"
+        },
+        {
+          "name": "construction-services2.png"
+        },
+        {
+          "name": "services3.jpg"
+        }
+      ],
+      "companyInfo": "Как мы работаем",
+      "sectionTitle": "Как мы работаем",
+      "sectionItems": [
+        {
+          "img": "construction-services-item1.png",
+          "title": "Консультация и анализ задачи",
+          "description": "Вы рассказываете о своей идее, целях и бюджете — мы задаём правильные вопросы, оцениваем участок и предлагаем оптимальные варианты реализации. Всё начинается с понимания ваших потребностей"
+        },
+        {
+          "img": "construction-services-item2.png",
+          "title": "Подготовка архитектурной концепции",
+          "description": "Разрабатываем проект будущего дома или жилого комплекса: планировка, стилистика, функциональные решения. При необходимости подключаем архитекторов, дизайнеров и инженеров"
+        },
+        {
+          "img": "construction-services-item3.png",
+          "title": "Смета, сроки, договор",
+          "description": "Готовим прозрачную смету, утверждаем график работ, фиксируем стоимость и сроки в официальном договоре. Вы точно знаете, что, когда и за сколько будет сделано"
+        },
+        {
+          "img": "construction-services-item4.png",
+          "title": "Строительство и сдача объекта",
+          "description": "Ведём стройку с соблюдением всех норм, этапов и стандартов качества. Контролируем процесс, отчитываемся, сдаём объект в срок — готовый к жизни или продаже"
+        }
+      ],
+      "objectTitle": "Объекты, в которые мы вложили экспертность и контроль",
+      "objectImages": [
+        { "name": "constructionObjectImage1.png" },
+        { "name": "constructionObjectImage2.png" },
+        { "name": "constructionObjectImage3.png" },
+        { "name": "constructionObjectImage4.png" },
+        { "name": "constructionObjectImage5.png" },
+        { "name": "constructionObjectImage6.png" }
+      ],
+      "whiteSectionTitle": "Ценим ваше время — начнём без лишних слов",
+      "whiteSectionDescription": "Позвоните или оставьте заявку, и мы предложим персональное решение",
+      "workSectionDescription": "Современные технологии, продуманные решения и надёжное строительство — фундамент вашего будущего",
+      "workSectionItems": [
+        {
+          "id": "01",
+          "text": "Строительная компания полного цикла, специализирующаяся на возведении малоэтажных домов и жилых комплексов в Польше"
+        },
+        {
+          "id": "02",
+          "text": "Мы реализуем проекты любой сложности — от уютных частных резиденций до масштабных кварталов с развитой инфраструктурой"
+        },
+        {
+          "id": "03",
+          "text": "В основе каждого объекта — продуманная архитектура, современные технологии и высокие стандарты качества"
+        },
+        {
+          "id": "04",
+          "text": "Работаем с проверенными подрядчиками, используем сертифицированные материалы и контролируем каждый этап строительства"
+        }
+      ],
+      "whiteSectionImages": [
+        "image copy 4.png"
+      ],
+      "qualitiesImage": "constructionQualities.png",
+      "qualitiesItems": [
+        {
+          "id": "01",
+          "title": "Полный цикл работ",
+          "text": "от проектирования до сдачи объекта"
+        },
+        {
+          "id": "02",
+          "title": "Прозрачность и контроль",
+          "text": "сметы, сроки, этапы"
+        },
+        {
+          "id": "03",
+          "title": "Премиум-качество",
+          "text": "сертифицированные материалы, опытные мастера"
+        },
+        {
+          "id": "04",
+          "title": "Индивидуальные решения",
+          "text": "не шаблон, а уникальный подход под каждый проект"
+        },
+        {
+          "id": "05",
+          "title": "Партнёрство с девелоперами",
+          "text": "надёжные связи и устойчивые ресурсы"
+        }
+      ],
+      "sponsors": [
+        { "img": "constructionSponsorsSponsor1.png" },
+        { "img": "constructionSponsorsSponsor2.png" },
+        { "img": "constructionSponsorsSponsor3.png" },
+        { "img": "constructionSponsorsSponsor4.png" },
+        { "img": "constructionSponsorsSponsor5.png" },
+        { "img": "constructionSponsorsSponsor6.png" },
+        { "img": "constructionSponsorsSponsor7.png" },
+        { "img": "constructionSponsorsSponsor8.png" },
+        { "img": "constructionSponsorsSponsor9.png" },
+        { "img": "constructionSponsorsSponsor10.png" },
+        { "img": "constructionSponsorsSponsor11.png" },
+        { "img": "constructionSponsorsSponsor12.png" },
+        { "img": "constructionSponsorsSponsor13.png" },
+        { "img": "constructionSponsorsSponsor14.png" }
+      ],
+      "inPersonImages": [
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png"
+      ]
+    },
+    "errorPage": {
+      "title": "Этой страницы не существует",
+      "description": "Похоже, вы зашли не туда. Вернёмся на главную?",
+      "button": "Вернитесь на главную"
+    },
+    "termsOfServices": {
+      "title": "Политика конфиденциальности и защита персональных данных (RODO)",
+      "sections": [
+        {
+          "title": "1. Администратор данных",
+          "content": "Администратором персональных данных является: \n**MERIDIAN Sp. z o.o.** \nадрес: Плоцк, Польша, 09-402 ул, Синагогальная 4, помещение 6\n NIP: 7743247115, REGON: 383151498\n E-mail: biuro@meridian-group.info\n Телефон: +48 531 050 050\n далее – «Администратор»."
+        },
+        {
+          "title": "2. Обрабатываемые данные",
+          "content": "Администратор обрабатывает персональные данные, предоставленные пользователем через форму обратной связи на сайте:\n • имя и фамилия, \n• номер телефона, \n• адрес электронной почты, \n• содержание сообщения, отправленного через форму."
+        },
+        {
+          "title": "3. Цели обработки данных",
+          "content": "Персональные данные обрабатываются для: \n• обеспечения возможности связи с пользователем и предоставления ответа на запрос, \n• предоставления коммерческого предложения на основе отправленного запроса, \n• ведения переписки по вопросам предоставляемых услуг. \nПравовым основанием обработки данных является **ст. 6 уст. 1 буквы a и b RODO** (согласие пользователя и необходимость для выполнения договора или действий перед его заключением)."
+        },
+        {
+          "title": "4. Получатели данных",
+          "content": "Данные могут передаваться только организациям, сотрудничающим с Администратором и участвующим в обработке данных для указанных целей (например, хостинг-провайдеры, ИТ-поддержка, бухгалтерия). \nДанные не передаются в страны за пределами ЕЭЗ."
+        },
+        {
+          "title": "5. Срок хранения данных",
+          "content": "Данные будут храниться только в течение времени, необходимого для обработки запроса или до момента отзыва согласия пользователем."
+        },
+        {
+          "title": "6. Права пользователя",
+          "content": "Пользователь имеет следующие права: \n• доступ к своим данным, \n• исправление данных, \n• удаление данных («право быть забытым»), \n• ограничение обработки данных, \n• переносимость данных, \n• отзыв согласия в любое время. \nДля реализации этих прав необходимо связаться с Администратором по e-mail: \nbiuro@meridian-group.info."
+        },
+        {
+          "title": "7. Добровольность предоставления данных",
+          "content": "Предоставление персональных данных является добровольным, но необходимо для обработки запроса через форму обратной связи."
+        },
+        {
+          "title": "8. Защита данных",
+          "content": "Администратор применяет соответствующие технические и организационные меры для защиты персональных данных, в соответствии с требованиями RODO."
+        },
+        {
+          "title": "9. Файлы cookies",
+          "content": "Сайт может использовать файлы cookies для корректной работы сайта, анализа посещаемости и маркетинговых целей. Подробности содержатся в **Политике использования файлов cookies**, доступной на сайте."
+        }
+      ]
+    }
+  },
+  "pl": {
+    "header": {
+      "navigation": [
+        {
+          "title": "Usługi",
+          "services": [
+            "Usługi w zakresie nieruchomości",
+            "Usługi projektantów",
+            "Usługi remontowe",
+            "Usługi budowlane"
+          ]
+        },
+        {
+          "title": "Łączność",
+          "services": []
+        },
+        {
+          "title": "Wyślij zapytanie",
+          "services": []
+        },
+        {
+          "title": "Zadzwoń teraz",
+          "services": []
+        },
+        {
+          "title": "Strona główna",
+          "services": []
+        }
+      ]
+    },
+    "headerMobile": {
+      "title": "Menu",
+      "navigation": [
+        {
+          "title": "Usługi",
+          "services": [
+            "Usługi w zakresie nieruchomości",
+            "Usługi projektantów",
+            "Usługi remontowe",
+            "Usługi budowlane"
+          ]
+        },
+        {
+          "title": "Łączność",
+          "services": []
+        },
+        {
+          "title": "Wyślij zapytanie",
+          "services": []
+        },
+        {
+          "title": "Zadzwoń teraz",
+          "services": []
+        },
+        {
+          "title": "Strona główna",
+          "services": []
+        }
+      ]
+    },
+    "home": {
+      "title": "TRANSFORMACJA PRZESTRZENI I PROJEKTY KREATYWNE",
+      "titleInfo": "Pełny cykl – od pomysłu do realizacji. Zaczynamy od południka zero",
+      "text": "Nasz zespół rozwiązuje problemy w branży nieruchomości, projektowania i budownictwa od 2017 roku. Dobieramy, projektujemy, budujemy i remontujemy. Zrealizowaliśmy ponad 300 projektów – od biur po przestrzenie mieszkalne i komercyjne",
+      "textCompany": "O naszej firmie",
+      "contactInfoText": "PRECYZJA. POMYSŁ. POSTĘP.",
+      "contactInfoBtn": "Skontaktuj się z nami",
+      "carouselImages": ["photo_1_2025-12-02_15-51-02.jpg", "photo_2_2025-12-02_15-51-02.jpg", "photo_3_2025-12-02_15-51-02.jpg", "photo_4_2025-12-02_15-51-02.jpg", "photo_5_2025-12-02_15-51-02.jpg", "photo_6_2025-12-02_15-51-02.jpg"]
+    },
+    "homeMobile": {
+      "title": [
+        "Pełny cykl –",
+        "od pomysłu do realizacji.",
+        "Zaczynamy od południka zero"
+      ],
+      "text": "Nasz zespół rozwiązuje problemy w branży nieruchomości, projektowania i budownictwa od 2017 roku. Dobieramy, projektujemy, budujemy i remontujemy. Zrealizowaliśmy ponad 300 projektów – od biur po przestrzenie mieszkalne i komercyjne",
+      "contactBtn": "Skontaktuj się z nami"
+    },
+    "leaveRequests": {
+      "titleForm": "Złóż zgłoszenie teraz",
+      "labelName": "Imię",
+      "labelPhone": "Telefon",
+      "checkboxTitle": "Rodzaj zamawianych usług",
+      "checkboxItems": [
+        "USŁUGI W ZAKRESIE NIERUCHOMOŚCI",
+        "USŁUGI PROJEKTANTÓW",
+        "USŁUGI REMONTOWE",
+        "USŁUGI BUDOWLANE"
+      ],
+      "sumbitBtn": "Wyślij zgłoszenie",
+      "titleFormSumbit": "Dziękujemy za zgłoszenie",
+      "textFormSumbit": "Twój formularz został pomyślnie wysłany. Nasz specjalista skontaktuje się z Tobą w najbliższym czasie w celu konsultacji",
+      "redirectBtn": "Wróć na stronę główną",
+      "errorText": "Proszę wybrać co najmniej jedną usługę",
+      "privacyError": "Należy zaakceptować politykę prywatności"
+    },
+    "services": [
+      {
+        "title": "USŁUGI W ZAKRESIE NIERUCHOMOŚCI",
+        "text": "Nieruchomości bez kłopotów – wybór, inspekcja i pełne wsparcie prawne",
+        "link": "/realty-services"
+      },
+      {
+        "title": "USŁUGI PROJEKTANTÓW",
+        "text": "Od stylowej aktualizacji „BASIC” po ekskluzywny projekt z nadzorem autora",
+        "link": "/design-services"
+      },
+      {
+        "title": "USŁUGI REMONTOWE",
+        "text": "Przejrzysty proces, precyzyjne wykonanie i nieskazitelne wyniki bez zbędnego zaangażowania",
+        "link": "/repair-services"
+      },
+      {
+        "title": "USŁUGI BUDOWLANE",
+        "text": "Niezawodne budownictwo — od projektu do oddania, z gwarancją jakości",
+        "link": "/construction-services"
+      }
+    ],
+    "realty-services": {
+      "title": "Usługi nieruchomości w jednym miejscu",
+      "description": "SZUKAJ, KUPUJ, SPRZEDAWAJ – NIEZAWODNIE I Z DBAŁOŚCIĄ O TWOJE INTERESY",
+      "images": [
+        {
+          "name": "image copy 11.png"
+        },
+        {
+          "name": "image copy 6.png"
+        },
+        {
+          "name": "services3.jpg"
+        }
+      ],
+      "companyInfo": "Jak pracujemy",
+      "sectionTitle": "Wybierz potrzebną usługę",
+      "sectionDescription": "Każdy projekt jest realizowany „pod klucz”: od pierwszego zapytania ofertowego po podpisanie umowy. Oferujemy indywidualne podejście i konkurencyjne warunki",
+      "sectionItems": [
+        {
+          "img": "image copy 8.png",
+          "title": "ZAKUP I SPRZEDAŻ ZIEMI",
+          "description": "Wybór gruntów pod budowę i inwestycje. Analiza, obsługa prawna i pełne wsparcie transakcyjne"
+        },
+        {
+          "img": "realty-services-item3.png",
+          "title": "NIERUCHOMOŚCI MIESZKANIOWE I KOMERCYJNE",
+          "description": "Mieszkania, domy, biura, magazyny. Znajdziemy idealną nieruchomość lub pomożemy Ci ją z zyskiem sprzedać"
+        },
+        {
+          "img": "image copy 9.png",
+          "title": "WYNAJEM NIERUCHOMOŚCI MIESZKANIOWYCH I KOMERCYJNYCH",
+          "description": "Wynajem długoterminowy i krótkoterminowy do celów mieszkaniowych i biznesowych. Elastyczne warunki, dogodne lokalizacje i zweryfikowane nieruchomości"
+        },
+        {
+          "img": "realty-services-item4.png",
+          "title": "WYNAJEM POWIERZCHNI HANDLOWYCH I BIUR",
+          "description": "Powierzchnie komercyjne w najlepszych lokalizacjach. Konkurencyjne oferty dla Twojej firmy — szybkie, przejrzyste i niezawodne"
+        }
+      ],
+      "whiteSectionTitle": "Cenimy Twój czas — bez zbędnych słów",
+      "whiteSectionDescription": "ZADZWOŃ DO NAS LUB ZŁÓŻ ZAPYTANIE, A MY ZAPROPONUJEMY CI INDYWIDUALNE ROZWIĄZANIE",
+      "workSectionDescription": "Pracujemy z tymi, którzy cenią przejrzystość, profesjonalizm i indywidualne podejście",
+      "workSectionItems": [
+        {
+          "id": "01",
+          "text": "Zespół ekspertów z dogłębną znajomością polskiego rynku nieruchomości i bogatym doświadczeniem w Europie. Działamy na rynku nieruchomości mieszkaniowych i komercyjnych, wspierając transakcje na każdym etapie: od wyboru nieruchomości po odbiór kluczy"
+        },
+        {
+          "id": "02",
+          "text": "Współpracujemy ze wszystkimi liczącymi się deweloperami w Polsce, a także ze sprawdzonymi deweloperami i agencjami w innych krajach"
+        },
+        {
+          "id": "03",
+          "text": "Każdy projekt jest realizowany „pod klucz”: od pierwszego zapytania ofertowego do podpisania umowy. Oferujemy indywidualne podejście i konkurencyjne warunki"
+        },
+        {
+          "id": "04",
+          "text": "Cenimy Twój czas i zapewniamy profesjonalne wsparcie na każdym etapie"
+        }
+      ],
+      "whiteSectionImages": [
+        "image copy 7.png"
+      ],
+      "sponsors": [
+        { "img": "realtySponsorsSponsor1.png" },
+        { "img": "realtySponsorsSponsor2.jpg" },
+        { "img": "realtySponsorsSponsor3.png" },
+        { "img": "realtySponsorsSponsor4.png" },
+        { "img": "realtySponsorsSponsor5.png" },
+        { "img": "realtySponsorsSponsor6.png" },
+        { "img": "realtySponsorsSponsor7.png" },
+        { "img": "realtySponsorsSponsor8.png" },
+        { "img": "realtySponsorsSponsor9.png" },
+        { "img": "realtySponsorsSponsor10.png" },
+        { "img": "realtySponsorsSponsor11.png" },
+        { "img": "realtySponsorsSponsor12.png" },
+        { "img": "realtySponsorsSponsor13.png" },
+        { "img": "realtySponsorsSponsor14.png" }
+      ],
+      "inPersonImages": [
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png"
+      ]
+    },
+    "design-services": {
+      "title": "Projekt odzwierciedlający Twój styl i cele",
+      "description": "WNĘTRZA, W KTÓRYCH CHCESZ MIESZKAĆ, PRACOWAĆ I BYĆ INSPIROWANYM",
+      "carouselImages": ["photo_1_2025-12-02_16-09-19.jpg", "photo_2_2025-12-02_16-09-19.jpg", "photo_3_2025-12-02_16-09-19.jpg", "photo_4_2025-12-02_16-09-19.jpg", "photo_5_2025-12-02_16-09-19.jpg"],
+      "images": [
+        {
+          "name": "design-services1.png"
+        },
+        {
+          "name": "design-services2.png"
+        },
+        {
+          "name": "services3.jpg"
+        }
+      ],
+      "companyInfo": "Jak pracujemy",
+      "sectionTitle": "Wybierz typ projektu",
+      "sectionDescription": "Z przyjemnością zrealizujemy wszystkie Twoje najśmielsze pomysły — od koncepcji do ostatniego szlifu, z uwagą na każdy szczegół",
+      "sectionItems": [
+        {
+          "img": "design-services-item1.png",
+          "title": "BAZOWY",
+          "description": "Odpowiednie dla osób, które chcą odświeżyć swoje wnętrze bez nadwyrężania budżetu. \n**Oferujemy:** planowanie, dobór stylu, kolorystyki i kluczowych materiałów. \nIdealne do renowacji kosmetycznych i małych projektów"
+        },
+        {
+          "img": "design-services-item2.png",
+          "title": "STANDARD",
+          "description": "Kompleksowy projekt z wizualizacjami i rysunkami. \n**Obejmuje:** układ, dobór materiałów wykończeniowych, mebli, oświetlenia i sprzętu AGD. \nOptymalne rozwiązanie „pod klucz” dla mieszkania lub domu."
+        },
+        {
+          "img": "image copy 2.png",
+          "title": "PREMIA",
+          "description": "Kompleksowe, spersonalizowane podejście z nadzorem na miejscu. \n**Obejmuje:** unikalne rozwiązania, wizualizacja 3D, kompletowanie i wsparcie na wszystkich etapach realizacji. \nDla tych, którzy oczekują nieskazitelnych rezultatów bez osobistego zaangażowania."
+        },
+        {
+          "img": "image copy 3.png",
+          "title": "BIZNES",
+          "description": "Projektowanie przestrzeni komercyjnych: biura, restauracje, salony, sklepy. \nKoncentrujemy się na ergonomii, budowaniu marki, stylu wizualnym i przepływie klientów. \nTworzymy przestrzenie, które działają dla Twojej firmy."
+        }
+      ],
+      "whiteSectionTitle": "Cenimy Twój czas — bez zbędnych słów",
+      "whiteSectionDescription": "ZADZWOŃ DO NAS LUB ZŁÓŻ ZAPYTANIE, A MY ZAPROPONUJEMY CI INDYWIDUALNE ROZWIĄZANIE",
+      "workSectionDescription": "Tworzymy unikalne i funkcjonalne wnętrza do życia i biznesu",
+      "workSectionItems": [
+        {
+          "id": "01",
+          "text": "Zespół najwyższej klasy projektantów i architektów, których łączy jeden cel: tworzenie przestrzeni, w których chce się żyć, pracować i rozwijać"
+        },
+        {
+          "id": "02",
+          "text": "Tworzymy unikalne rozwiązania w zakresie aranżacji wnętrz dla obiektów mieszkalnych i komercyjnych, koncentrując się na stylu, celach i stylu życia naszych klientów"
+        },
+        {
+          "id": "03",
+          "text": "Każdy projekt charakteryzuje się przemyślaną estetyką, nienaganną ergonomią i wysoką jakością wykonania. Z nami Twój projekt jest w niezawodnych i utalentowanych rękach"
+        },
+        {
+          "id": "04",
+          "text": "Współpracujemy ściśle z inżynierami, wykonawcami robót budowlanych i dostawcami materiałów, aby mieć pewność, że pomysły zapisane na papierze staną się rzeczywistymi, trwałymi wnętrzami"
+        }
+      ],
+      "whiteSectionImages": [
+        "services3.jpg",
+        "services3.jpg",
+        "services3.jpg",
+        "services3.jpg",
+        "services3.jpg"
+      ],
+      "sponsors": [
+        { "img": "designSponsorsSponsor1.png" },
+        { "img": "designSponsorsSponsor2.png" },
+        { "img": "designSponsorsSponsor3.png" },
+        { "img": "designSponsorsSponsor4.png" },
+        { "img": "designSponsorsSponsor5.png" },
+        { "img": "designSponsorsSponsor6.png" },
+        { "img": "designSponsorsSponsor7.png" },
+        { "img": "designSponsorsSponsor8.png" },
+        { "img": "designSponsorsSponsor9.png" },
+        { "img": "designSponsorsSponsor10.png" },
+        { "img": "designSponsorsSponsor11.png" },
+        { "img": "designSponsorsSponsor12.png" },
+        { "img": "designSponsorsSponsor13.png" },
+        { "img": "designSponsorsSponsor14.png" }
+      ],
+      "inPersonImages": [
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png"
+      ]
+    },
+    "repair-services": {
+      "title": "Renowacja łącząca jakość i komfort",
+      "description": "PROFESJONALNY REMONT LOKALI MIESZKALNYCH I UŻYTKOWYCH",
+      "carouselImages": [
+        "photo_1_2025-12-02_16-25-31.jpg",
+        "photo_2_2025-12-02_16-25-31.jpg",
+        "photo_3_2025-12-02_16-25-31.jpg",
+        "photo_4_2025-12-02_16-25-31.jpg",
+        "photo_5_2025-12-02_16-25-31.jpg",
+        "photo_6_2025-12-02_16-25-31.jpg",
+        "photo_7_2025-12-02_16-25-31.jpg"
+      ],
+      "images": [
+        {
+          "name": "repair-services1.png"
+        },
+        {
+          "name": "repair-services2.png"
+        },
+        {
+          "name": "image copy 5.png"
+        }
+      ],
+      "companyInfo": "Jak pracujemy",
+      "sectionTitle": "Wybierz styl wykonania",
+      "sectionDescription": "Z przyjemnością zrealizujemy Twój remont od pierwszego pomysłu do ostatniego gwoździa, z dbałością o każdy centymetr",
+      "sectionItems": [
+        {
+          "img": "repair-services-item1.jpg",
+          "title": "STANDARD",
+          "description": "Podstawowe, wysokiej jakości remonty z wykorzystaniem niezawodnych i sprawdzonych materiałów. Optymalne rozwiązanie dla osób ceniących praktyczność i przystępną cenę"
+        },
+        {
+          "img": "repair-services-item2.jpg",
+          "title": "PREMIUM",
+          "description": "Remonty z wykorzystaniem designerskich rozwiązań i ulepszonych materiałów. Łączymy estetykę, komfort i indywidualny styl, aby tworzyć przemyślane, nowoczesne wnętrza"
+        },
+        {
+          "img": "repair-services-item3.png",
+          "title": "VIP",
+          "description": "Luksusowa, ekskluzywna renowacja z wykorzystaniem ekskluzywnych materiałów, niestandardowych projektów i najwyższej jakości wykonania. Maksimum stylu, komfortu i prestiżu"
+        }
+      ],
+      "whiteSectionTitle": "Cenimy Twój czas — bez zbędnych słów",
+      "whiteSectionDescription": "ZADZWOŃ DO NAS LUB ZŁÓŻ ZAPYTANIE, A MY ZAPROPONUJEMY CI INDYWIDUALNE ROZWIĄZANIE",
+      "workSectionDescription": "Estetyka i komfort w każdym projekcie — od przytulnych mieszkań po stylowe przestrzenie komercyjne",
+      "workSectionItems": [
+        {
+          "id": "01",
+          "text": "Jest firmą budowlaną specjalizującą się w renowacji i adaptacji obiektów mieszkalnych i komercyjnych na terenie Europy"
+        },
+        {
+          "id": "02",
+          "text": "Nasze projekty łączą w sobie estetykę, funkcjonalność i wysoką jakość wykonania. Tworzymy przestrzenie zachwycające wyglądem, idealne zarówno do wygodnego życia, jak i prowadzenia działalności gospodarczej"
+        },
+        {
+          "id": "03",
+          "text": "Dla obiektów komercyjnych — kawiarni, restauracji, biur, sklepów i innych obiektów — opracowujemy rozwiązania wnętrzarskie, które poprawiają wizerunek i zwiększają efektywność"
+        },
+        {
+          "id": "04",
+          "text": "Dla nieruchomości mieszkalnych — apartamentów, domów i apartamentów — tworzymy przytulne, nowoczesne i ergonomiczne wnętrza, koncentrując się na stylu życia i indywidualnych preferencjach klienta"
+        }
+      ],
+      "whiteSectionImages": [
+        "image copy 5.png"
+      ],
+      "sponsors": [
+        { "img": "repairSponsorsSponsor1.png" },
+        { "img": "repairSponsorsSponsor2.png" },
+        { "img": "repairSponsorsSponsor3.png" },
+        { "img": "repairSponsorsSponsor4.png" },
+        { "img": "repairSponsorsSponsor5.png" },
+        { "img": "repairSponsorsSponsor6.png" },
+        { "img": "repairSponsorsSponsor7.png" },
+        { "img": "repairSponsorsSponsor8.png" },
+        { "img": "repairSponsorsSponsor9.png" },
+        { "img": "repairSponsorsSponsor10.png" },
+        { "img": "repairSponsorsSponsor11.png" },
+        { "img": "repairSponsorsSponsor12.png" },
+        { "img": "repairSponsorsSponsor13.png" },
+        { "img": "repairSponsorsSponsor14.png" }
+      ],
+      "inPersonImages": [
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png"
+      ]
+    },
+    "construction-services": {
+      "title": "Usługi budowlane – w jednych rękach",
+      "description": "OD INDYWIDUALNYCH REZYDENCJI DO WIELKOSKALOWYCH PROJEKTÓW DEWELOPERSKICH",
+      "carouselImages": ["photo_1_2025-12-02_16-34-43.jpg", "photo_2_2025-12-02_16-34-43.jpg", "photo_3_2025-12-02_16-34-43.jpg", "photo_4_2025-12-02_16-34-43.jpg"],
+      "images": [
+        {
+          "name": "construction-services1.jpg"
+        },
+        {
+          "name": "construction-services2.png"
+        },
+        {
+          "name": "services3.jpg"
+        }
+      ],
+      "companyInfo": "Jak pracujemy",
+      "sectionTitle": "JAK PRACUJEMY",
+      "sectionItems": [
+        {
+          "img": "construction-services-item1.png",
+          "title": "KONSULTACJA I ANALIZA PROBLEMU",
+          "description": "Opowiedz nam o swoim pomyśle, celach i budżecie — zadajemy odpowiednie pytania, oceniamy witrynę i proponujemy najlepsze opcje wdrożenia. Wszystko zaczyna się od zrozumienia Twoich potrzeb"
+        },
+        {
+          "img": "construction-services-item2.png",
+          "title": "PRZYGOTOWANIE KONCEPCJI ARCHITEKTONICzNEJ",
+          "description": "Opracowujemy projekt przyszłego domu lub osiedla mieszkaniowego, uwzględniając układ, styl i rozwiązania funkcjonalne. W razie potrzeby współpracujemy również z architektami, projektantami i inżynierami"
+        },
+        {
+          "img": "construction-services-item3.png",
+          "title": "KOSZTORYS, HARMONOGRAM, UMOWA",
+          "description": "Przygotowujemy przejrzysty kosztorys, zatwierdzamy harmonogram prac i formalnie zawieramy umowęna koszt i termin wykonania. Dokładnie wiesz, co zostanie wykonane, kiedy i za ile"
+        },
+        {
+          "img": "construction-services-item4.png",
+          "title": "BUDOWA I ODDANIE OBIEKTU",
+          "description": "Realizujemy budowę zgodnie ze wszystkimi przepisami, etapami i standardami jakości. Monitorujemy proces,sporządzamy raporty i oddajemy projekt na czas – gotowy  do zamieszkania lub sprzedaży"
+        }
+      ],
+      "objectTitle": "Obiekty, w które zainwestowaliśmy wiedzę i kontrolę",
+      "objectImages": [
+        { "name": "constructionObjectImage1.png" },
+        { "name": "constructionObjectImage2.png" },
+        { "name": "constructionObjectImage3.png" },
+        { "name": "constructionObjectImage4.png" },
+        { "name": "constructionObjectImage5.png" },
+        { "name": "constructionObjectImage6.png" }
+      ],
+      "whiteSectionTitle": "Cenimy Twój czas — bez zbędnych słów",
+      "whiteSectionDescription": "ZADZWOŃ DO NAS LUB ZŁÓŻ ZAPYTANIE, A MY ZAPROPONUJEMY CI INDYWIDUALNE ROZWIĄZANIE",
+      "workSectionDescription": "NOWOCZESNE TECHNOLOGIE, PRZEMYŚLANE ROZWIĄZANIA I NIEZAWODNA KONSTRUKCJA TO FUNDAMENT TWOJEJ PRZYSZŁOŚCI",
+      "workSectionItems": [
+        {
+          "id": "01",
+          "text": "Firma budowlana zajmująca się kompleksowym wykonawstwem, specjalizująca się w budowie budynków niskich i osiedli mieszkaniowych w Polsce"
+        },
+        {
+          "id": "02",
+          "text": "Realizujemy projekty o dowolnym stopniu złożoności — od przytulnych prywatnych rezydencji po rozległe osiedla z rozwiniętą infrastrukturą"
+        },
+        {
+          "id": "03",
+          "text": "Każdy projekt opiera się na przemyślanej architekturze, nowoczesnych technologiach i wysokich standardach jakości"
+        },
+        {
+          "id": "04",
+          "text": "Współpracujemy ze sprawdzonymi wykonawcami, używamy certyfikowanych materiałów i nadzorujemy każdy etap budowy"
+        }
+      ],
+      "whiteSectionImages": [
+        "image copy 4.png"
+      ],
+      "qualitiesImage": "constructionQualities.png",
+      "qualitiesItems": [
+        {
+          "id": "01",
+          "title": "PEŁNY CYKL PRAC",
+          "text": "od projektu do oddania obiektu do użytku"
+        },
+        {
+          "id": "02",
+          "title": "PRZEJRZYSTOŚĆ I KONTROLA",
+          "text": "szacunków, terminów, etapów"
+        },
+        {
+          "id": "03",
+          "title": "Materiały najwyższej jakości",
+          "text": "doświadczeni rzemieślnicy"
+        },
+        {
+          "id": "04",
+          "title": "INDYWIDUALNE ROZWIĄZANIA",
+          "text": "nie szablon, ale unikalne podejście do każdego projektu"
+        },
+        {
+          "id": "05",
+          "title": "PARTNERSTWO Z DEWELOPERAMI",
+          "text": "niezawodne kontakty i zrównoważone zasoby"
+        }
+      ],
+      "sponsors": [
+        { "img": "constructionSponsorsSponsor1.png" },
+        { "img": "constructionSponsorsSponsor2.png" },
+        { "img": "constructionSponsorsSponsor3.png" },
+        { "img": "constructionSponsorsSponsor4.png" },
+        { "img": "constructionSponsorsSponsor5.png" },
+        { "img": "constructionSponsorsSponsor6.png" },
+        { "img": "constructionSponsorsSponsor7.png" },
+        { "img": "constructionSponsorsSponsor8.png" },
+        { "img": "constructionSponsorsSponsor9.png" },
+        { "img": "constructionSponsorsSponsor10.png" },
+        { "img": "constructionSponsorsSponsor11.png" },
+        { "img": "constructionSponsorsSponsor12.png" },
+        { "img": "constructionSponsorsSponsor13.png" },
+        { "img": "constructionSponsorsSponsor14.png" }
+      ],
+      "inPersonImages": [
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png",
+        "person.png"
+      ]
+    },
+    "errorPage": {
+      "title": "Ta strona nie istnieje",
+      "description": "Wygląda na to, że trafiłeś nie tam, gdzie trzeba. Wrócimy na stronę główną?",
+      "button": "Wróć na stronę główną"
+    },
+    "termsOfServices": {
+      "title": "Polityka prywatności i RODO",
+      "sections": [
+        {
+          "title": "1. Administrator danych osobowych",
+          "content": "Administratorem danych osobowych jest: \n**MERIDIAN Sp. z o.o.** \nz siedzibą w Płocku, Poland, 09-402 ul. Synagogalna 4, lok. 6\n NIP: 7743247115, REGON: 383151498\n adres e-mail: biuro@meridian-group.info\n telefon: +48 531 050 050"
+        },
+        {
+          "title": "2. Zakres przetwarzanych danych",
+          "content": "Administrator przetwarza dane osobowe podane dobrowolnie przez użytkownika za pośrednictwem formularza kontaktowego na stronie internetowej:\n • imię i nazwisko, \n• numer telefonu, \n• adres e-mail, \n• ewentualnie treść wiadomości przesłanej przez formularz."
+        },
+        {
+          "title": "3. Cel przetwarzania danych",
+          "content": "Dane osobowe przetwarzane są w celu: \n• umożliwienia kontaktu z użytkownikiem i udzielenia odpowiedzi na zapytanie, \n• przedstawienia oferty handlowej na podstawie przesłanego zapytania, \n• prowadzenia korespondencji dotyczącej świadczonych usług. \nPodstawą prawną przetwarzania danych jest **art. 6 ust. 1 lit. a i b RODO** (zgoda osoby, której dane dotyczą, oraz niezbędność do wykonania umowy lub działań przed jej zawarciem)."
+        },
+        {
+          "title": "4. Odbiorcy danych",
+          "content": "Dane osobowe mogą być przekazywane wyłącznie podmiotom współpracującym z Administratorem w zakresie niezbędnym do realizacji celu przetwarzania (np. firmom hostingowym, informatycznym, obsłudze księgowej). \nDane nie są przekazywane do państw trzecich (poza EOG)."
+        },
+        {
+          "title": "5. Okres przechowywania danych",
+          "content": "Dane osobowe będą przechowywane przez okres niezbędny do realizacji celu kontaktu lub do momentu wycofania zgody przez użytkownika."
+        },
+        {
+          "title": "6. Prawa użytkownika",
+          "content": "Osobie, której dane dotyczą, przysługują następujące prawa: \n• prawo dostępu do danych, \n• prawo do sprostowania danych, \n• prawo do usunięcia danych („prawo do bycia zapomnianym”), \n• prawo do ograniczenia przetwarzania, \n• prawo do przenoszenia danych, \n• prawo do cofnięcia zgody w dowolnym momencie. \nW celu realizacji powyższych praw należy skontaktować się z Administratorem: \nbiuro@meridian-group.info."
+        },
+        {
+          "title": "7. Dobrowolność podania danych",
+          "content": "Podanie danych osobowych jest dobrowolne, jednak niezbędne do realizacji kontaktu za pośrednictwem formularza."
+        },
+        {
+          "title": "8. Zabezpieczenia danych",
+          "content": "Administrator stosuje odpowiednie środki techniczne i organizacyjne zapewniające ochronę przetwarzanych danych osobowych, zgodnie z wymogami RODO."
+        },
+        {
+          "title": "9. Pliki cookies",
+          "content": "Strona internetowa może wykorzystywać pliki cookies w celu poprawnego działania serwisu, analizy ruchu oraz marketingu. Szczegółowe informacje zawarte są w **Polityce plików cookies**, dostępnej na stronie."
+        }
+      ]
+    }
+  }
+}

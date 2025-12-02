@@ -1,0 +1,81 @@
+.serviceCardMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  width: 250px;
+  flex-shrink: 0;
+  border-left: 1px solid #FFF;
+}
+
+.serviceCardMobile:first-child {
+  border-left: none;
+}
+
+.serviceCardMobile img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.serviceCardMobile h2 {
+  width: 100%;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.serviceCardMobile .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.serviceCardMobile .btnContact {
+  border: none;
+  width: 100%;
+  height: 35px;
+  background-color: #D35400;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 14px;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.formattedText {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.paragraph {
+  margin-bottom: 1em;
+}
+
+.paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.paragraph strong {
+  font-weight: 700;
+  font-family: "Roboto Regular";
+  line-height: 120%;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.paragraph em {
+  font-style: italic;
+}

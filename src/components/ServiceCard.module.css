@@ -1,0 +1,210 @@
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: calc(360px + 80px);
+}
+
+.serviceCard img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.serviceCard h2 {
+  width: 100%;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.serviceCard .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.serviceCard .btnContact {
+  border: none;
+  width: 100%;
+  height: 40px;
+  background-color: #D35400;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  line-height: 16px;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 24px;
+}
+
+.paragraph {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  letter-spacing: 0%;
+  text-align: left;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.paragraph:last-child {
+  margin-bottom: 0 !important;
+}
+
+.paragraph strong {
+  font-weight: 700;
+  font-family: "Roboto Regular";
+  font-size: 20px;
+  line-height: 60%; 
+  vertical-align: baseline; 
+  display: inline;
+}
+
+.paragraph em {
+  font-style: italic;
+  line-height: 135%;
+  vertical-align: baseline;
+}
+
+.serviceCard {
+  border-left: 1px solid #FFF;
+}
+
+.serviceCard:first-child {
+  border-left: none;
+}
+
+@media (max-width: 1600px) {
+  .serviceCard h2 {
+    font-size: 28px;
+  }
+
+  .formattedText {
+    font-size: 18px;
+  }
+  
+  .paragraph {
+    font-size: 18px;
+  }
+  
+  .paragraph strong {
+    font-size: 18px;
+    line-height: 135%;
+  }
+  
+  .serviceCard .btnContact {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .serviceCard h2 {
+    font-size: 25px;
+  }
+
+  .formattedText {
+    font-size: 18px;
+  }
+  
+  .paragraph {
+    font-size: 18px;
+  }
+  
+  .paragraph strong {
+    font-size: 18px;
+    line-height: 135%;
+  }
+  
+  .serviceCard .btnContact {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .serviceCard h2 {
+    font-size: 24px;
+  }
+
+  .formattedText {
+    font-size: 16px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+  }
+
+  .paragraph strong {
+    font-size: 16px;
+    line-height: 135%;
+  }
+
+  .serviceCard .btnContact {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1375px) {
+  .serviceCard h2 {
+    font-size: 22px;
+  }
+
+  .formattedText {
+    font-size: 14px;
+  }
+
+  .paragraph {
+    font-size: 14px;
+  }
+
+  .paragraph strong {
+    font-size: 14px;
+    line-height: 135%;
+  }
+
+  .serviceCard .btnContact {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .serviceCard h2 {
+    font-size: 20px;
+  }
+
+  .formattedText {
+    font-size: 14px;
+  }
+
+  .paragraph {
+    font-size: 14px;
+  }
+
+  .paragraph strong {
+    font-size: 14px;
+    line-height: 135%;
+  }
+
+  .serviceCard .btnContact {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1175px) {
+  .serviceCard:nth-child(2),
+  .serviceCard:nth-child(1) {
+    border-bottom: 1px solid #fff;
+  }
+
+  .serviceCard:nth-child(3) {
+    border-left: none;
+  }
+}

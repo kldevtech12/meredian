@@ -1,0 +1,194 @@
+.errorContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  color: white;
+}
+
+.errorContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../assets/optimized/textureHome-original.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.4;
+  z-index: -1;
+  animation: load 0.2s ease-out;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.error img {
+  height: 400px;
+  mix-blend-mode: overlay;
+}
+
+.error .redirect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.error .redirect h1 {
+  font-family: "Deledda";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.error .redirect span {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.error .redirect button {
+  background: rgba(211, 84, 0, 1);
+  cursor: pointer;
+  width: 470px;
+  height: 50px;
+  border: none;
+  color: #FFF;
+  font-family: "Roboto Semibold";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.error .redirect button:hover {
+  background: rgba(211, 84, 0, 0.9);
+}
+
+.contactInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  gap: 40px;
+  text-align: center;
+  border-top: 1px solid #FFF;
+}
+
+.contactInfoContainer .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  gap: 20px;
+}
+
+.contactInfoContainer .contacts span {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.contactInfoContainer .contacts span:hover {
+  color: rgba(211, 84, 0, 1);
+}
+
+.contactInfoContainer .addres {
+  width: 210px;
+  font-family: "Roboto Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 135%;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.contactInfoContainer .addres:hover {
+  color: rgba(211, 84, 0, 1);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: #FFF;
+  padding-left: 80px;
+  padding-right: 80px;
+  color: #000;
+}
+
+.footer .copyright {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  width: 230px;
+}
+
+.footer .social {
+  display: flex;
+  gap: 1em;
+}
+
+.footer .social img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer .social img:hover {
+  transform: scale(1.1);
+}
+
+.footer .btnUp {
+  display: flex;
+  justify-content: end;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 230px;
+  transition: transform 0.3s ease;
+}
+
+.footer .btnUp:hover {
+  transform: translateY(-5px);
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

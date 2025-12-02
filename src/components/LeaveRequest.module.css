@@ -1,0 +1,334 @@
+.background {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+  animation: load 0.2s ease-out;
+}
+
+.modalWindow {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modalWindow .window {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: rgba(242, 241, 239, 1);
+  color: #000;
+  width: 100%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modalWindow .window .formHeading {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.modalWindow .window .formHeading h1 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-family: "Deledda";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  padding-right: 28px;
+}
+
+.modalWindow .window .formHeading .closeBtn {
+  position: absolute;
+  right: 0;
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.modalWindow .window form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.modalWindow .window form .inputLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.modalWindow .window form .inputLabel label {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.modalWindow .window form .inputLabel input {
+  height: 40px;
+  border: 1px solid #000;
+  padding-left: 16px;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+
+.modalWindow .window form .inputLabel input::placeholder {
+  color: rgba(177, 177, 176, 1);
+}
+
+.modalWindow .window form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modalWindow .window form fieldset legend {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.modalWindow .window form fieldset .checkboxItem label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+
+.modalWindow .window form fieldset .checkboxItem label input {
+  height: 18px;
+  width: 18px;
+  border: 1px solid #000;
+  border-radius: 0px;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.modalWindow .window form fieldset .checkboxItem label input:checked {
+  background-color: #000;
+  border-color: #000;
+  position: relative;
+}
+
+.modalWindow .window form fieldset .checkboxItem label input:checked::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../assets/check.svg");
+  background-size: 14px 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.modalWindow .window form fieldset .checkboxItem label:hover input {
+  border-color: #333;
+}
+
+.modalWindow .window form fieldset .checkboxItem label:hover input:checked {
+  border-color: #000;
+  background-color: #000;
+}
+
+.modalWindow .window button {
+  height: 45px;
+  background-color: #000;
+  color: white;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.typeServices.error {
+  border: 1px solid #d32f2f;
+  background-color: #ffebee;
+  padding: 12px;
+}
+
+.errorText {
+  color: #d32f2f;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto Regular";
+  margin-bottom: 8px;
+}
+
+.successMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 0;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.successMessage p {
+  max-width: 100%;
+  margin: 0;
+}
+
+.successMessage button {
+  height: 45px;
+  background-color: #000;
+  color: white;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.privacyCheckbox {
+  margin: 16px 0 8px 0;
+  padding: 0;
+}
+
+.privacyCheckbox.error {
+  border: 1px solid #d32f2f;
+  background-color: #ffebee;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.privacyText {
+  display: inline-block;
+  line-height: 1.4;
+}
+
+.privacyLink {
+  color: #D35400;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.privacyLink:hover {
+  color: #a04000;
+  text-decoration: none;
+}
+
+/* Обновленные стили для чекбоксов (если нужно) */
+.checkboxLabel {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+
+.checkboxInput {
+  height: 18px;
+  width: 18px;
+  border: 1px solid #000;
+  border-radius: 0px;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.checkboxInput:checked {
+  background-color: #000;
+  border-color: #000;
+  position: relative;
+}
+
+.checkboxInput:checked::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../assets/check.svg");
+  background-size: 14px 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.checkboxLabel:hover .checkboxInput {
+  border-color: #333;
+}
+
+.checkboxLabel:hover .checkboxInput:checked {
+  border-color: #000;
+  background-color: #000;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

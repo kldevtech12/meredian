@@ -1,0 +1,1744 @@
+.servicesPage {
+  height: auto;
+}
+
+.firstSection {
+  position: relative;
+}
+
+.firstSection.constructionSection1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../assets/textureConstruction1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  z-index: -1;
+  animation: load 0.2s ease-out;
+}
+
+.secondSection.constructionSection2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../assets/textureConstruction2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  z-index: -1;
+  animation: load 0.2s ease-out;
+}
+
+.firstSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../assets/optimized/backgroundServicePage-original-conv.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  z-index: -1;
+  animation: load 0.2s ease-out;
+}
+
+.firstSection .headDescription {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  width: 100%;
+  border-bottom: 1px solid #FFF;
+}
+
+.firstSection .headDescription .titleH1 {
+  display: flex;
+  align-items: center;
+}
+
+.firstSection .headDescription h1 {
+  font-family: "Deledda";
+  font-weight: 400;
+  font-size: 80px;
+  margin-left: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.firstSection .headDescription .descriptionTitle {
+  padding: 40px;
+  border-left: 1px solid #FFF;
+  line-height: 130%;
+  text-transform: uppercase;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 28px;
+  width: 85%;
+}
+
+@media (max-width: 1600px) {
+  .firstSection .headDescription h1 {
+    font-size: 70px !important;
+  }
+  .secondSection .tasksContainer p {
+    font-size: 150px !important;
+  }
+}
+
+@media (max-width: 1500px) {
+  .firstSection .headDescription .descriptionTitle span {
+    font-size: 26px;
+  }
+  .firstSection .headDescription h1 {
+    font-size: 60px !important;
+  }
+}
+
+@media (max-width: 1250px) {
+  .firstSection .headDescription h1 {
+    font-size: 50px !important;
+  }
+}
+
+.firstSection .headDescription span {
+  white-space: normal;
+}
+
+.firstSection .headDescription span:contains("—") {
+  white-space: nowrap;
+}
+
+.firstSection .imagesContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  border-bottom: 1px solid #FFF;
+}
+
+.firstSection .imagesContainer .imageContainer1 {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  padding: 40px;
+  border-right: 1px solid #FFF;
+}
+
+.firstSection .imagesContainer .imageContainer1 .carouselWrapper {
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+}
+
+.firstSection .imagesContainer .imageContainer1 .carouselContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.firstSection .imagesContainer .imageContainer1 .carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.firstSection .imagesContainer .imageContainer1 .carouselSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.firstSection .imagesContainer .imageContainer1 .carouselSlide.active {
+  opacity: 1;
+}
+
+.firstSection .imagesContainer .imageContainer1 .carouselSlide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.firstSection .imagesContainer .imageContainer1 .carouselOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.firstSection .imagesContainer .imageContainer1 .carouselOverlay.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.firstSection .imagesContainer .imageContainer1 .carouselBtn {
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.firstSection .imagesContainer .imageContainer1 .carouselBtn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.firstSection .imagesContainer .imageContainer1 .carouselBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.firstSection .imagesContainer .imageContainer1 .carouselDots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 2;
+}
+
+.firstSection .imagesContainer .imageContainer1 .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  outline: 1px solid white;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.firstSection .imagesContainer .imageContainer1 .dot:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.2);
+}
+
+.firstSection .imagesContainer .imageContainer1 .dot.activeDot {
+  background: white;
+  transform: scale(1.2);
+  border: 1px solid #000000;
+}
+
+.firstSection .imagesContainer .imageContainer1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-left: 40px;
+}
+
+.firstSection .imagesContainer .mixContainer2 {
+  display: grid;
+  grid-template-rows: 75% 25%;
+  min-height: 500px;
+}
+
+.firstSection .imagesContainer .imageContainer2 {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  padding: 40px;
+  border-bottom: 1px solid #FFF;
+}
+
+.firstSection .imagesContainer .imageContainer2 img {
+  width: 100%;
+  height: 100%;
+  padding-right: 40px;
+  object-position: center;
+  object-fit: cover;
+}
+
+.firstSection .imagesContainer .mixContainer2 .infoContainer {
+  display: flex;
+  gap: 24px;
+  height: 100%;
+  width: 100%;
+}
+
+.firstSection .imagesContainer .mixContainer2 .infoContainer span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Medium";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.firstSection .imagesContainer .mixContainer2 .infoContainer img {
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.firstSection .selectServiceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  border-bottom: 1px solid #FFF;
+  padding-left: 80px;
+}
+
+.firstSection .selectServiceContainer h1 {
+  font-family: "Deledda";
+  font-weight: 400;
+  font-size: 70px;
+  margin-top: 60px;
+}
+
+.firstSection .selectServiceContainer span {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  width: 660px;
+  margin-bottom: 40px;
+}
+
+.firstSection .servicesContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+@media (max-width: 1175px) {
+  .firstSection .servicesContainer {
+    grid-template-columns: repeat(2, minmax(280px, 440px));
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+  }
+}
+
+.firstSection .objectsContainer {}
+
+.firstSection .objectsContainer .objectsHead {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+}
+
+.firstSection .objectsContainer .objectsHead h1 {
+  font-family: "Deledda";
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-left: 80px;
+}
+
+.firstSection .objectsContainer .objectsHead .btnsScrollImages {
+  justify-content: end;
+  align-items: end;
+  display: flex;
+  gap: 16px;
+  height: 100%;
+  padding: 40px;
+  padding-right: 80px;
+}
+
+.firstSection .objectsContainer .objectsHead .btnsScrollImages button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.firstSection .objectsContainer .objectsHead .btnsScrollImages button:hover:not(:disabled) {
+  background-color: rgba(211, 84, 0, 0.7);
+  transform: scale(1.05);
+}
+
+.firstSection .objectsContainer .objectsHead .btnsScrollImages button:active {
+  background-color: rgba(211, 84, 0, 1);
+  transform: scale(0.95);
+}
+
+.firstSection .objectsContainer .objectsHead .btnsScrollImages .btnLeft {
+  background-color: transparent;
+  border: 1px solid #FFF;
+}
+
+.firstSection .objectsContainer .objectsHead .btnsScrollImages .btnRight {
+  background-color: transparent;
+  border: 1px solid #FFF;
+}
+
+.firstSection .objectsContainer .objectsHead .btnsScrollImages button img {
+  height: 18px;
+  transition: transform 0.2s ease;
+}
+
+.firstSection .objectsContainer .objectsHead .btnsScrollImages button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.firstSection .objectsContainer .objectsHead .btnsScrollImages button:disabled:hover {
+  background-color: transparent;
+  transform: none;
+}
+
+.firstSection .objectsContainer .objectsImages {
+  height: 660px;
+}
+
+.whiteContainer {
+  width: 100%;
+  background-color: #FFF;
+  color: #000;
+}
+
+.whiteContainer .head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #000;
+}
+
+.whiteContainer .head .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  border-right: 1px solid #000;
+}
+
+.whiteContainer .head .title h1 {
+  font-family: "Deledda";
+  font-weight: 400;
+  font-size: 70px;
+  padding-left: 40px;
+}
+
+.whiteContainer .head .contactInfo {
+  display: grid;
+  grid-template-rows: auto 120px;
+}
+
+.whiteContainer .head .contactInfo .contactTitle {
+  display: flex;
+  align-items: end;
+  padding: 40px;
+  border-bottom: 1px solid #000;
+}
+
+.whiteContainer .head .contactInfo .contactTitle span {
+  font-family: "Roboto Medium";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  text-transform: uppercase;
+  width: 60%;
+}
+
+.whiteContainer .head .contactInfo .contactLinks {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.whiteContainer .head .contactInfo .contactLinks .btnContainer {
+  display: flex;
+  flex: 1;
+  padding: 40px;
+}
+
+.whiteContainer .head .contactInfo .contactLinks .btnContainer:nth-child(1) {
+  border-right: 1px solid #000;
+}
+
+.whiteContainer .head .contactInfo .contactLinks .btnContainer .blackBtn {
+  width: 100%;
+  padding-left: 2em;
+  padding-right: 2em;
+  height: 40px;
+  border: none;
+  background-color: #000;
+  color: #FFF;
+  cursor: pointer;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-wrap: nowrap;
+}
+
+.whiteContainer .imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  height: 725px;
+  width: 100%;
+}
+
+.whiteContainer .imageContainer img,
+.whiteContainer .imageContainer .singleImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  display: block;
+}
+
+.secondSection {
+  position: relative;
+}
+
+.secondSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../assets/optimized/backgroundServicePage2-original-conv.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  z-index: -1;
+  animation: load 0.2s ease-out;
+}
+
+.secondSection .headDescription {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  min-height: 150px;
+  width: 100%;
+  border-bottom: 1px solid #FFF;
+}
+
+.secondSection .headDescription .titleH1 {
+  display: flex;
+  align-items: center;
+}
+
+.secondSection .headDescription h1 {
+  font-family: "Deledda";
+  font-weight: 400;
+  font-size: 70px;
+  margin-left: 80px;
+}
+
+.secondSection .headDescription span {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 40px;
+  border-left: 1px solid #FFF;
+  line-height: 130%;
+  text-transform: uppercase;
+  font-family: "Roboto Medium";
+  font-weight: 500;
+  font-size: 20px;
+  max-width: 620px;
+}
+
+.secondSection .tasksContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: stretch;
+  padding: 80px;
+}
+
+.secondSection .tasksContainer span {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  letter-spacing: 0%;
+}
+
+.secondSection .tasksContainer .firstTasks,
+.secondSection .tasksContainer .secondTasks {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 80px;
+  height: 100%;
+}
+
+.secondSection .tasksContainer .secondTask,
+.secondSection .tasksContainer .firstTask {
+  display: flex;
+  min-height: 180px;
+  align-items: center;
+  gap: 30px;
+}
+
+.secondSection .tasksContainer .firstTask {
+  flex-direction: row;
+}
+
+.secondSection .tasksContainer .secondTask {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 1500px) {
+  .secondSection .tasksContainer .firstTask p,
+  .secondSection .tasksContainer .secondTask p {
+    font-size: 120px !important;
+  }
+  .secondSection .tasksContainer .blackSection span {
+    font-size: 16px !important;
+  }
+}
+
+.secondSection .tasksContainer .blackSection {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  padding: 1.75em;
+  color: white;
+  height: 100%;
+}
+
+.secondSection .tasksContainer .blackSection .overlayBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(107, 107, 107, 1);
+  box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25), 5px 5px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.secondSection .tasksContainer .blackSection span {
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: normal;
+}
+
+.secondSection .tasksContainer img {
+  position: relative;
+  font-family: "Deledda";
+  font-weight: 400;
+  font-size: 180px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  mix-blend-mode: overlay;
+  width: 190px;
+}
+
+.secondSection .tasksContainer .task {
+  position: relative;
+}
+
+.secondSection .tasksContainer p {
+  font-size: 180px;
+  line-height: 100%;
+  text-edge: cap;
+  color: #FFFFFF;
+  mix-blend-mode: overlay;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  font-family: "Deledda";
+  font-weight: 400;
+  font-size: 180px;
+  leading-trim: CAP_HEIGHT;
+  line-height: 100%;
+  letter-spacing: 0%;
+  z-index: -1;
+}
+
+.secondSection .tasksContainer img::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.secondSection .qualitiesContainer {
+  border-top: 1px solid #FFF;
+}
+
+.secondSection .qualitiesContainer h1 {
+  font-family: "Deledda";
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding: 60px;
+  padding-left: 80px;
+  padding-bottom: 0;
+}
+
+.secondSection .qualitiesContainer .areaQualities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 700px;
+}
+
+.secondSection .qualitiesContainer .areaQualities img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  padding: 40px;
+  padding-left: 80px;
+}
+
+.secondSection .qualitiesContainer .areaQualities .qualitiesList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px;
+}
+
+.secondSection .qualitiesContainer .areaQualities .qualitiesList .qualitiesItem {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.secondSection .qualitiesContainer .areaQualities .qualitiesList .qualitiesItem .qualitiesItemId {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  width: 75px;
+  min-width: 75px;
+  background: rgba(211, 84, 0, 1);
+  flex-shrink: 0
+}
+
+.secondSection .qualitiesContainer .areaQualities .qualitiesList .qualitiesItem .qualitiesItemId span {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 27.53px;
+  letter-spacing: 2.07px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.secondSection .qualitiesContainer .areaQualities .qualitiesList .qualitiesItem .qualitiesItemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  flex: 1;
+}
+
+.secondSection .qualitiesContainer .areaQualities .qualitiesList .qualitiesItem .qualitiesItemInfo h2 {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.secondSection .qualitiesContainer .areaQualities .qualitiesList .qualitiesItem .qualitiesItemInfo span {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.secondSection .inPersonsContainer {
+  display: grid;
+  grid-template-columns: auto 4fr;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+}
+
+.secondSection .inPersonsContainer .inPersonsHead {
+  border-right: 1px solid #FFF;
+  padding-top: 60px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.secondSection .inPersonsContainer .inPersonsHead h1 {
+  font-family: "Deledda";
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.secondSection .inPersonsContainer .inPersonsHead span {
+  font-family: "Roboto Medium";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.secondSection .inPersonsContainer .inPersonsImages {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  gap: 1em;
+}
+
+.secondSection .inPersonsContainer .inPersonsImages img {
+  width: 300px;
+  object-fit: cover;
+}
+
+.secondSection .sponsorsContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr 1fr;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-left: 80px;
+  padding-right: 80px;
+  gap: 21px;
+  width: 100%;
+  border-bottom: 1px solid #FFF;
+}
+
+.secondSection .sponsorsContainer img {
+  width: 100%;
+}
+
+.contactInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  gap: 40px;
+}
+
+.contactInfoContainer .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+}
+
+.contactInfoContainer .addres {
+  width: 210px;
+  font-family: "Roboto Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 135%;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: #FFF;
+  padding-left: 80px;
+  padding-right: 80px;
+  color: #000;
+}
+
+footer span {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  width: 230px;
+}
+
+footer .social {
+  display: flex;
+  gap: 1em;
+}
+
+footer .social img {
+  height: 40px;
+  width: 40px;
+}
+
+footer .btnUp {
+  display: flex;
+  justify-content: end;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 230px;
+}
+
+.whiteCarouselContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.whiteCarousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.whiteCarouselSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.whiteCarouselSlide.active {
+  opacity: 1;
+}
+
+.whiteCarouselSlide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.whiteCarouselOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.whiteCarouselOverlay.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.whiteCarouselOverlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.whiteCarouselOverlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.3) 0%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.whiteCarouselBtn {
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.whiteCarouselBtn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.whiteCarouselBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.whiteCarouselDots {
+  position: absolute;
+  bottom: 20px;
+  left: calc(20px + 60px);
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 2;
+}
+
+.whiteDot {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  outline: 1px solid white;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.whiteDot:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.2);
+}
+
+.whiteDot.activeWhiteDot {
+  background: white;
+  transform: scale(1.2);
+  border: 1px solid #000000;
+}
+
+.whiteDot:disabled {
+  cursor: not-allowed;
+}
+
+.inPersonsImages {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.inPersonsRow {
+  display: flex;
+  gap: 1em;
+  width: max-content;
+  animation: scrollLeft 40s linear infinite;
+  --images-count: 10;
+}
+
+.inPersonImage {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  flex-shrink: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  filter: blur(0.5px);
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(calc(-300px * var(--images-count, 10) - 1em * var(--images-count, 10)));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.inPersonsRow:hover {
+  animation-play-state: paused;
+}
+
+@media (max-width: 1600px) {
+  .animatedTitle {
+    font-size: 70px !important;
+  }
+}
+
+@media (max-width: 1500px) {
+  .animatedTitle {
+    font-size: 65px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .animatedTitle {
+    font-size: 50px !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+}
+
+.firstSection .imagesContainer .imageContainer1,
+.firstSection .imagesContainer .imageContainer2 {
+  overflow: hidden;
+  position: relative;
+}
+
+.firstSection .imagesContainer .imageContainer1 img,
+.firstSection .imagesContainer .imageContainer2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 1000px) and (max-width: 1600px) {
+  .servicesPage {
+    font-size: 95%;
+  }
+
+  .firstSection .headDescription {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .firstSection .headDescription h1 {
+    margin-left: 60px;
+    font-size: 60px !important;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .firstSection .headDescription .descriptionTitle {
+    padding: 35px;
+    font-size: 24px;
+    width: 90%;
+  }
+
+  .firstSection .imagesContainer {
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .firstSection .imagesContainer .imageContainer1 {
+    padding: 35px;
+  }
+
+  .firstSection .imagesContainer .imageContainer1 img {
+    padding-left: 30px;
+  }
+
+  .firstSection .imagesContainer .imageContainer2 {
+    padding: 35px;
+  }
+
+  .firstSection .imagesContainer .imageContainer2 img {
+    padding-right: 30px;
+  }
+
+  .firstSection .imagesContainer .mixContainer2 .infoContainer {
+    gap: 20px;
+  }
+
+  .firstSection .imagesContainer .mixContainer2 .infoContainer span {
+    font-size: 18px;
+  }
+
+  .firstSection .imagesContainer .mixContainer2 .infoContainer img {
+    padding-left: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .firstSection .selectServiceContainer {
+    padding-left: 60px;
+    gap: 30px;
+  }
+
+  .firstSection .selectServiceContainer h1 {
+    font-size: 60px !important;
+    margin-top: 50px;
+  }
+
+  .firstSection .selectServiceContainer span {
+    font-size: 18px;
+    width: 580px;
+    margin-bottom: 35px;
+  }
+
+
+
+  .firstSection .objectsContainer .objectsHead {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .firstSection .objectsContainer .objectsHead h1 {
+    padding-left: 60px;
+    font-size: 60px !important;
+  }
+
+  .firstSection .objectsContainer .objectsHead .btnsScrollImages {
+    padding: 35px;
+    padding-right: 60px;
+    gap: 14px;
+  }
+
+  .firstSection .objectsContainer .objectsHead .btnsScrollImages button {
+    height: 42px;
+    width: 42px;
+  }
+
+  .firstSection .objectsContainer .objectsImages {
+    height: 580px;
+  }
+
+  .whiteContainer .head .title {
+    padding: 35px;
+  }
+
+  .whiteContainer .head .title h1 {
+    font-size: 60px !important;
+    padding-left: 35px;
+  }
+
+  .whiteContainer .head .contactInfo .contactTitle {
+    padding: 35px;
+  }
+
+  .whiteContainer .head .contactInfo .contactTitle span {
+    font-size: 18px;
+    width: 70%;
+  }
+
+  .whiteContainer .head .contactInfo .contactLinks .btnContainer {
+    padding: 35px;
+  }
+
+  .whiteContainer .head .contactInfo .contactLinks .btnContainer .blackBtn {
+    height: 38px;
+    font-size: 15px;
+  }
+
+  .whiteContainer .imageContainer {
+    padding: 35px;
+    height: 650px;
+  }
+
+  .secondSection .headDescription {
+    min-height: 140px;
+  }
+
+  .secondSection .headDescription h1 {
+    margin-left: 60px;
+    font-size: 60px !important;
+  }
+
+  .secondSection .headDescription span {
+    padding: 35px;
+    font-size: 18px;
+    max-width: 550px;
+  }
+
+  .secondSection .tasksContainer {
+    gap: 70px;
+    padding: 70px;
+  }
+
+  .secondSection .tasksContainer .firstTasks,
+  .secondSection .tasksContainer .secondTasks {
+    gap: 70px;
+  }
+
+  .secondSection .tasksContainer .secondTask,
+  .secondSection .tasksContainer .firstTask {
+    gap: 25px;
+    min-height: 160px;
+  }
+
+  .secondSection .tasksContainer span {
+    font-size: 18px;
+  }
+
+  .secondSection .tasksContainer p {
+    font-size: 150px !important;
+  }
+
+  .secondSection .qualitiesContainer h1 {
+    padding: 50px;
+    padding-left: 60px;
+    font-size: 60px !important;
+  }
+
+  .secondSection .qualitiesContainer .areaQualities {
+    min-height: 650px;
+  }
+
+  .secondSection .qualitiesContainer .areaQualities img {
+    padding: 35px;
+    padding-left: 60px;
+  }
+
+  .secondSection .qualitiesContainer .areaQualities .qualitiesList {
+    padding: 35px;
+  }
+
+  .secondSection .qualitiesContainer .areaQualities .qualitiesList .qualitiesItem {
+    gap: 35px;
+  }
+
+  .secondSection .qualitiesContainer .areaQualities .qualitiesList .qualitiesItem .qualitiesItemId {
+    height: 70px;
+    width: 70px;
+    min-width: 70px;
+  }
+
+  .secondSection .qualitiesContainer .areaQualities .qualitiesList .qualitiesItem .qualitiesItemId span {
+    font-size: 26px;
+  }
+
+  .secondSection .qualitiesContainer .areaQualities .qualitiesList .qualitiesItem .qualitiesItemInfo h2 {
+    font-size: 32px;
+  }
+
+  .secondSection .qualitiesContainer .areaQualities .qualitiesList .qualitiesItem .qualitiesItemInfo span {
+    font-size: 18px;
+  }
+
+  .secondSection .inPersonsContainer .inPersonsHead {
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .secondSection .inPersonsContainer .inPersonsHead h1 {
+    font-size: 60px !important;
+  }
+
+  .secondSection .inPersonsContainer .inPersonsHead span {
+    font-size: 18px;
+  }
+
+  .secondSection .inPersonsContainer .inPersonsImages {
+    padding: 50px;
+  }
+
+  .secondSection .inPersonsContainer .inPersonsImages img {
+    width: 280px;
+  }
+
+  .inPersonImage {
+    width: 280px;
+    height: 280px;
+  }
+
+  .secondSection .sponsorsContainer {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    gap: 18px;
+  }
+
+  .contactInfoContainer {
+    height: 280px;
+    gap: 35px;
+  }
+
+  .contactInfoContainer .contacts {
+    font-size: 32px;
+  }
+
+  .contactInfoContainer .addres {
+    font-size: 18px;
+    width: 200px;
+  }
+
+  footer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  footer span {
+    font-size: 18px;
+    width: 220px;
+  }
+
+  footer .social img {
+    height: 38px;
+    width: 38px;
+  }
+
+  .whiteCarouselBtn {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    margin: 0 18px;
+  }
+
+  .whiteCarouselDots {
+    bottom: 18px;
+    left: calc(18px + 55px);
+  }
+
+  .whiteDot {
+    width: 11px;
+    height: 11px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .firstSection .headDescription h1 {
+    font-size: 54px !important;
+    margin-left: 40px;
+  }
+
+  .firstSection .selectServiceContainer h1 {
+    font-size: 54px !important;
+  }
+
+  .firstSection .objectsContainer .objectsHead h1 {
+    font-size: 54px !important;
+  }
+
+  .whiteContainer .head .title h1 {
+    font-size: 54px !important;
+  }
+
+  .secondSection .headDescription h1 {
+    font-size: 54px !important;
+    margin-left: 40px;
+  }
+
+  .secondSection .qualitiesContainer h1 {
+    font-size: 54px !important;
+  }
+
+  .secondSection .inPersonsContainer .inPersonsHead h1 {
+    font-size: 54px !important;
+  }
+
+  .secondSection .tasksContainer p {
+    font-size: 130px !important;
+  }
+
+  .inPersonImage {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .firstSection .headDescription h1 {
+    font-size: 65px !important;
+  }
+
+  .firstSection .selectServiceContainer h1 {
+    font-size: 65px !important;
+  }
+
+  .firstSection .objectsContainer .objectsHead h1 {
+    font-size: 65px !important;
+  }
+
+  .whiteContainer .head .title h1 {
+    font-size: 65px !important;
+  }
+
+  .secondSection .headDescription h1 {
+    font-size: 65px !important;
+  }
+
+  .secondSection .qualitiesContainer h1 {
+    font-size: 65px !important;
+  }
+
+  .secondSection .inPersonsContainer .inPersonsHead h1 {
+    font-size: 65px !important;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1000px) {
+  .firstSection .headDescription {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .firstSection .headDescription .titleH1 {
+    justify-content: center;
+  }
+
+  .firstSection .headDescription h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+  .firstSection .headDescription .descriptionTitle {
+    border-left: none;
+    border-top: 1px solid #FFF;
+    width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .firstSection .imagesContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .firstSection .imagesContainer .imageContainer1 {
+    border-right: none;
+    border-bottom: 1px solid #FFF;
+    text-align: center;
+  }
+
+  .firstSection .imagesContainer .imageContainer1 img {
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  .firstSection .imagesContainer .mixContainer2 {
+    grid-template-rows: auto auto;
+    text-align: center;
+  }
+
+  .firstSection .imagesContainer .mixContainer2 .infoContainer {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .firstSection .selectServiceContainer {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .firstSection .selectServiceContainer h1 {
+    text-align: center;
+  }
+
+  .firstSection .selectServiceContainer span {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .firstSection .objectsContainer .objectsHead {
+    text-align: center;
+  }
+
+  .firstSection .objectsContainer .objectsHead h1 {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .firstSection .objectsContainer .objectsHead .btnsScrollImages {
+    justify-content: center;
+  }
+
+  .whiteContainer .head {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .whiteContainer .head .title {
+    border-right: none;
+    border-bottom: 1px solid #000;
+    text-align: center;
+  }
+
+  .whiteContainer .head .title h1 {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .whiteContainer .head .contactInfo .contactTitle {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .whiteContainer .head .contactInfo .contactTitle span {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .whiteContainer .head .contactInfo .contactLinks {
+    justify-content: center;
+  }
+
+  .secondSection .headDescription {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .secondSection .headDescription .titleH1 {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .secondSection .headDescription h1 {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .secondSection .headDescription span {
+    border-left: none;
+    border-top: 1px solid #FFF;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .secondSection .tasksContainer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .secondSection .tasksContainer .firstTask,
+  .secondSection .tasksContainer .secondTask {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .secondSection .qualitiesContainer {
+    text-align: center;
+  }
+
+  .secondSection .qualitiesContainer h1 {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .secondSection .qualitiesContainer .areaQualities {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .secondSection .qualitiesContainer .areaQualities .qualitiesList {
+    align-items: center;
+  }
+
+  .secondSection .qualitiesContainer .areaQualities .qualitiesList .qualitiesItem {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .secondSection .inPersonsContainer {
+    text-align: center;
+  }
+
+  .secondSection .inPersonsContainer .inPersonsHead {
+    text-align: center;
+  }
+
+  .secondSection .inPersonsContainer .inPersonsImages {
+    justify-content: center;
+  }
+
+  .contactInfoContainer {
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .social {
+    justify-content: center;
+  }
+
+  .firstSection .headDescription h1,
+  .firstSection .selectServiceContainer h1,
+  .firstSection .objectsContainer .objectsHead h1,
+  .whiteContainer .head .title h1,
+  .secondSection .headDescription h1,
+  .secondSection .qualitiesContainer h1,
+  .secondSection .inPersonsContainer .inPersonsHead h1 {
+    font-size: 50px !important;
+  }
+
+  .secondSection .tasksContainer p {
+    font-size: 110px !important;
+  }
+
+  .firstSection .headDescription .descriptionTitle span,
+  .firstSection .selectServiceContainer span,
+  .whiteContainer .head .contactInfo .contactTitle span,
+  .secondSection .headDescription span,
+  .secondSection .tasksContainer span,
+  .secondSection .qualitiesContainer .areaQualities .qualitiesList .qualitiesItem .qualitiesItemInfo span,
+  .contactInfoContainer .contacts span,
+  .contactInfoContainer .addres,
+  footer span {
+    font-size: 16px !important;
+  }
+}

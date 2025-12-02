@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/static/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("./fonts/Roboto/static/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("./fonts//Roboto/static/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Semibold";
+  src: url("./fonts/Roboto/static/Roboto-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Reem";
+  src: url("./fonts/Reem_Kufi_Fun/ReemKufiFun-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Deledda";
+  src: url("./fonts/Deledda/Deledda-Open-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Epilogue Semibold";
+  src: url("./fonts/Epilogue/static/Epilogue-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Epilogue Bold";
+  src: url("./fonts/Epilogue/static/Epilogue-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  position: relative;
+  background-color: #000;
+  margin: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+/* body.background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./assets/optimized/texture-original.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.4;
+  z-index: -1;
+  animation: load 0.2s ease-out;
+} */
+
+@keyframes load {
+  0% {opacity: 0;}
+  100% {opacity: 0.4;}
+}
