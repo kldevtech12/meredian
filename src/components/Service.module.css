@@ -46,7 +46,7 @@
 }
 
 .serviceMobile {
-  flex: 0 0 100%;
+  flex: 0 0 85%;
   scroll-snap-align: start;
   background: #FFF;
   display: flex;

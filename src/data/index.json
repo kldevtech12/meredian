@@ -99,22 +99,26 @@
       {
         "title": "Риэлторские услуги",
         "text": "Недвижимость без лишних хлопот — подбор, проверка и полное юридическое сопровождение",
-        "link": "/realty-services"
+        "link": "/realty-services",
+        "imageName": "image copy 11.png"
       },
       {
         "title": "Дизайнерские услуги",
         "text": "От стильного «БАЗОВОГО» обновление до премиального дизайна с авторским надзором",
-        "link": "/design-services"
+        "link": "/design-services",
+        "imageName": "design-services1.png"
       },
       {
         "title": "Ремонтные услуги",
         "text": "Прозрачный процесс, точное исполнение и безупречный результат без лишнего вовлечения",
-        "link": "/repair-services"
+        "link": "/repair-services",
+        "imageName": "image copy 5.png"
       },
       {
         "title": "Cтроительные услуги",
         "text": "Надёжное строительство — от проекта до сдачи, с гарантией качества",
-        "link": "/construction-services"
+        "link": "/construction-services",
+        "imageName": "image copy 4.png"
       }
     ],
     "realty-services": {
@@ -211,7 +215,7 @@
     "design-services": {
       "title": "Дизайн, отражающий ваш стиль и цели",
       "description": "Интерьеры, в которых хочется жить, работать и вдохновлять",
-      "carouselImages": ["photo_1_2025-12-02_16-09-19.jpg", "photo_2_2025-12-02_16-09-19.jpg", "photo_3_2025-12-02_16-09-19.jpg", "photo_4_2025-12-02_16-09-19.jpg", "photo_5_2025-12-02_16-09-19.jpg"],
+      "carouselImages": ["design-services1.png"],
       "images": [
         {
           "name": "design-services1.png"
@@ -270,11 +274,11 @@
         }
       ],
       "whiteSectionImages": [
-        "services3.jpg",
-        "services3.jpg",
-        "services3.jpg",
-        "services3.jpg",
-        "services3.jpg"
+        "photo_1_2025-12-02_16-09-19.jpg",
+        "photo_2_2025-12-02_16-09-19.jpg",
+        "photo_3_2025-12-02_16-09-19.jpg",
+        "photo_4_2025-12-02_16-09-19.jpg",
+        "photo_5_2025-12-02_16-09-19.jpg"
       ],
       "sponsors": [
         { "img": "designSponsorsSponsor1.png" },
@@ -293,15 +297,11 @@
         { "img": "designSponsorsSponsor14.png" }
       ],
       "inPersonImages": [
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png"
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png"
       ]
     },
     "repair-services": {
@@ -388,21 +388,17 @@
         { "img": "repairSponsorsSponsor14.png" }
       ],
       "inPersonImages": [
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png"
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png"
       ]
     },
     "construction-services": {
       "title": "Строительные услуги — в одних руках",
       "description": "От индивидуальных резиденций до масштабных девелоперских проектов",
-      "carouselImages": ["photo_1_2025-12-02_16-34-43.jpg", "photo_2_2025-12-02_16-34-43.jpg", "photo_3_2025-12-02_16-34-43.jpg", "photo_4_2025-12-02_16-34-43.jpg"],
+      "carouselImages": ["construction-services1.jpg"],
       "images": [
         {
           "name": "construction-services1.jpg"
@@ -469,7 +465,7 @@
         }
       ],
       "whiteSectionImages": [
-        "image copy 4.png"
+        "photo_1_2025-12-02_16-34-43.jpg", "photo_2_2025-12-02_16-34-43.jpg", "photo_3_2025-12-02_16-34-43.jpg", "photo_4_2025-12-02_16-34-43.jpg"
       ],
       "qualitiesImage": "constructionQualities.png",
       "qualitiesItems": [
@@ -516,15 +512,11 @@
         { "img": "constructionSponsorsSponsor14.png" }
       ],
       "inPersonImages": [
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png"
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png"
       ]
     },
     "errorPage": {
@@ -674,22 +666,26 @@
       {
         "title": "USŁUGI W ZAKRESIE NIERUCHOMOŚCI",
         "text": "Nieruchomości bez kłopotów – wybór, inspekcja i pełne wsparcie prawne",
-        "link": "/realty-services"
+        "link": "/realty-services",
+        "imageName": "image copy 11.png"
       },
       {
         "title": "USŁUGI PROJEKTANTÓW",
         "text": "Od stylowej aktualizacji „BASIC” po ekskluzywny projekt z nadzorem autora",
-        "link": "/design-services"
+        "link": "/design-services",
+        "imageName": "design-services1.png"
       },
       {
         "title": "USŁUGI REMONTOWE",
         "text": "Przejrzysty proces, precyzyjne wykonanie i nieskazitelne wyniki bez zbędnego zaangażowania",
-        "link": "/repair-services"
+        "link": "/repair-services",
+        "imageName": "image copy 5.png"
       },
       {
         "title": "USŁUGI BUDOWLANE",
         "text": "Niezawodne budownictwo — od projektu do oddania, z gwarancją jakości",
-        "link": "/construction-services"
+        "link": "/construction-services",
+        "imageName": "image copy 4.png"
       }
     ],
     "realty-services": {
@@ -776,17 +772,13 @@
         "image copy 12.png",
         "image copy 10.png",
         "image copy 12.png",
-        "image copy 10.png",
-        "image copy 12.png",
-        "image copy 10.png",
-        "image copy 12.png",
         "image copy 10.png"
       ]
     },
     "design-services": {
       "title": "Projekt odzwierciedlający Twój styl i cele",
       "description": "WNĘTRZA, W KTÓRYCH CHCESZ MIESZKAĆ, PRACOWAĆ I BYĆ INSPIROWANYM",
-      "carouselImages": ["photo_1_2025-12-02_16-09-19.jpg", "photo_2_2025-12-02_16-09-19.jpg", "photo_3_2025-12-02_16-09-19.jpg", "photo_4_2025-12-02_16-09-19.jpg", "photo_5_2025-12-02_16-09-19.jpg"],
+      "carouselImages": ["design-services1.png"],
       "images": [
         {
           "name": "design-services1.png"
@@ -845,11 +837,11 @@
         }
       ],
       "whiteSectionImages": [
-        "services3.jpg",
-        "services3.jpg",
-        "services3.jpg",
-        "services3.jpg",
-        "services3.jpg"
+        "photo_1_2025-12-02_16-09-19.jpg",
+        "photo_2_2025-12-02_16-09-19.jpg",
+        "photo_3_2025-12-02_16-09-19.jpg",
+        "photo_4_2025-12-02_16-09-19.jpg",
+        "photo_5_2025-12-02_16-09-19.jpg"
       ],
       "sponsors": [
         { "img": "designSponsorsSponsor1.png" },
@@ -868,15 +860,11 @@
         { "img": "designSponsorsSponsor14.png" }
       ],
       "inPersonImages": [
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png"
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png"
       ]
     },
     "repair-services": {
@@ -963,21 +951,17 @@
         { "img": "repairSponsorsSponsor14.png" }
       ],
       "inPersonImages": [
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png"
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png"
       ]
     },
     "construction-services": {
       "title": "Usługi budowlane – w jednych rękach",
       "description": "OD INDYWIDUALNYCH REZYDENCJI DO WIELKOSKALOWYCH PROJEKTÓW DEWELOPERSKICH",
-      "carouselImages": ["photo_1_2025-12-02_16-34-43.jpg", "photo_2_2025-12-02_16-34-43.jpg", "photo_3_2025-12-02_16-34-43.jpg", "photo_4_2025-12-02_16-34-43.jpg"],
+      "carouselImages": ["construction-services1.jpg"],
       "images": [
         {
           "name": "construction-services1.jpg"
@@ -1044,7 +1028,7 @@
         }
       ],
       "whiteSectionImages": [
-        "image copy 4.png"
+        "photo_1_2025-12-02_16-34-43.jpg", "photo_2_2025-12-02_16-34-43.jpg", "photo_3_2025-12-02_16-34-43.jpg", "photo_4_2025-12-02_16-34-43.jpg"
       ],
       "qualitiesImage": "constructionQualities.png",
       "qualitiesItems": [
@@ -1091,15 +1075,11 @@
         { "img": "constructionSponsorsSponsor14.png" }
       ],
       "inPersonImages": [
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png",
-        "person.png"
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png",
+        "image copy 12.png",
+        "image copy 10.png"
       ]
     },
     "errorPage": {

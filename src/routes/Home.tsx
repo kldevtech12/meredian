@@ -6,6 +6,7 @@ import Service from "../components/Service";
 import LeaveRequest from "../components/LeaveRequest";
 import data from "../data/index.json";
 import instagram from "../assets/instagram.svg";
+import facebook from "../assets/facebook.svg";
 import telegram from "../assets/telegram.svg";
 import whatsapp from "../assets/whatsapp.svg";
 import mail from "../assets/mail.svg";
@@ -169,6 +170,10 @@ const Home: React.FC = () => {
 
   const handleInstagramClick = () => {
     window.open("https://www.instagram.com/meridian_company/", "_blank");
+  };
+
+  const handleFacebookClick = () => {
+    window.open("https://www.facebook.com/profile.php?id=61576014290920", "_blank");
   };
 
   const handleTelegramClick = () => {
@@ -366,10 +371,10 @@ const Home: React.FC = () => {
               transition={defaultTransition}
             >
               <span onClick={handlePhoneClick} style={{ cursor: "pointer" }}>
-                +48 796 440 622
+                +48 531 050 050
               </span>
               <span onClick={handleEmailClick} style={{ cursor: "pointer" }}>
-                meridian.eu.office@gmail.com
+                biuro@meridian-group.info
               </span>
             </motion.div>
 
@@ -412,6 +417,20 @@ const Home: React.FC = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               transition={{ ...defaultTransition, delay: 0.1 }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            />
+            <motion.img
+              src={facebook}
+              alt="facebook"
+              onClick={handleFacebookClick}
+              style={{ cursor: "pointer" }}
+              loading="lazy"
+              variants={fadeInScale}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ ...defaultTransition, delay: 0.15 }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             />

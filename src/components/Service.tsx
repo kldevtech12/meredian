@@ -131,51 +131,33 @@ const ServiceMobile: React.FC<ServiceProps> = ({ title, text, link, imageName = 
   return (
     <motion.div 
       className={styles.serviceMobile}
-      initial="hidden"
-      whileInView="visible"
+      initial={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.6 }}
       whileHover={{ 
         scale: 1.03,
-        transition: { duration: 0.4 }
+        transition: { duration: 0.3 }
       }}
     >
       <div className={styles.serviceContent}>
-        <motion.div 
-          className={styles.serviceImage}
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-        >
+        <div className={styles.serviceImage}>
           {!isLoading ? (
             <motion.img 
               src={optimizedSrc} 
               alt={title}
               loading="lazy"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
+              initial={{ opacity: 1 }}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
             />
           ) : (
-            <motion.div 
-              className={styles.imagePlaceholder}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6 }}
-            >
+            <div className={styles.imagePlaceholder}>
               Loading...
-            </motion.div>
+            </div>
           )}
-        </motion.div>
+        </div>
         
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
+        <h1>
           {titleFirstLine}
           {titleSecondLine && (
             <>
@@ -183,14 +165,9 @@ const ServiceMobile: React.FC<ServiceProps> = ({ title, text, link, imageName = 
               {titleSecondLine}
             </>
           )}
-        </motion.h1>
+        </h1>
         
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-        >
+        <p>
           <span className={styles.firstLineMobile}>{firstPart}</span>
           {secondPart && (
             <>
@@ -198,21 +175,17 @@ const ServiceMobile: React.FC<ServiceProps> = ({ title, text, link, imageName = 
               <span className={styles.secondLineMobile}>{secondPart}</span>
             </>
           )}
-        </motion.p>
+        </p>
         
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6 }}
-        >
+        <motion.div>
           <Link to={link}>
             <motion.button
               whileHover={{ 
-                scale: 1.08,
-                transition: { duration: 0.3 }
+                scale: 1.05,
+                backgroundColor: "#B84500",
+                transition: { duration: 0.2 }
               }}
-              whileTap={{ scale: 0.95 }}
+              whileTap={{ scale: 0.98 }}
             >
               <span>{buttonText}</span>
             </motion.button>

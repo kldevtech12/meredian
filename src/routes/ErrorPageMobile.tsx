@@ -56,6 +56,10 @@ const ErrorPageMobile: React.FC = () => {
     window.open("https://www.instagram.com/meridian_company/", "_blank");
   };
 
+  const handleFacebookClick = () => {
+    window.open("https://www.facebook.com/profile.php?id=61576014290920", "_blank");
+  };
+
   const handleTelegramClick = () => {
     window.open("https://t.me/account", "_blank");
   };
@@ -79,13 +83,13 @@ const ErrorPageMobile: React.FC = () => {
           </div>
         </div>
 
-        <div className={styles.contactInfo}>
+        <div className={styles.contactInfoContainer}>
           <div className={styles.contacts}>
             <span onClick={handlePhoneClick} style={{ cursor: "pointer" }}>
-              +48 796 440 622
+              +48 531 050 050
             </span>
             <span onClick={handleEmailClick} style={{ cursor: "pointer" }}>
-              meridian.eu.office@gmail.com
+              biuro@meridian-group.info
             </span>
           </div>
 
@@ -108,6 +112,13 @@ const ErrorPageMobile: React.FC = () => {
               src={instagram}
               alt="instagram"
               onClick={handleInstagramClick}
+              style={{ cursor: "pointer" }}
+              loading="lazy"
+            />
+            <img
+              src={facebook}
+              alt="facebook"
+              onClick={handleFacebookClick}
               style={{ cursor: "pointer" }}
               loading="lazy"
             />

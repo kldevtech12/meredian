@@ -8,6 +8,7 @@ import data from "../data/index.json";
 import arrowLeft from "../assets/arrow-left.svg";
 import arrowRight from "../assets/arrow-right.svg";
 import instagram from "../assets/instagram.svg";
+import facebook from "../assets/facebook.svg";
 import telegram from "../assets/telegram.svg";
 import whatsapp from "../assets/whatsapp.svg";
 import mail from "../assets/mail.svg";
@@ -602,6 +603,10 @@ const ServicesPage: React.FC<ServicePageProps> = ({ typePage }) => {
     window.open("https://www.instagram.com/meridian_company/", "_blank");
   };
 
+  const handleFacebookClick = () => {
+    window.open("https://www.facebook.com/profile.php?id=61576014290920", "_blank");
+  };
+
   const handleTelegramClick = () => {
     window.open("https://t.me/account", "_blank");
   };
@@ -655,7 +660,7 @@ const ServicesPage: React.FC<ServicePageProps> = ({ typePage }) => {
 
           <div className={styles.imagesContainer}>
             <div className={styles.imageContainer1}>
-              {carouselImages.length > 0 ? (
+              {carouselImages.length > 1 ? (
                 <div
                   className={styles.carouselWrapper}
                   onClick={handleCarouselClick}
@@ -725,6 +730,13 @@ const ServicesPage: React.FC<ServicePageProps> = ({ typePage }) => {
                     </div>
                   </div>
                 </div>
+              ) : carouselImages.length === 1 ? (
+                <img
+                  src={carouselImages[0]}
+                  alt="service"
+                  loading="lazy"
+                  className={styles.singleImage}
+                />
               ) : (
                 image1Src && (
                   <motion.img
@@ -1300,10 +1312,10 @@ const ServicesPage: React.FC<ServicePageProps> = ({ typePage }) => {
           <div ref={downRef} className={styles.contactInfoContainer}>
             <div className={styles.contacts}>
               <span onClick={handlePhoneClick} style={{ cursor: "pointer" }}>
-                +48 796 440 622
+                +48 531 050 050
               </span>
               <span onClick={handleEmailClick} style={{ cursor: "pointer" }}>
-                meridian.eu.office@gmail.com
+                biuro@meridian-group.info
               </span>
             </div>
 
@@ -1325,6 +1337,12 @@ const ServicesPage: React.FC<ServicePageProps> = ({ typePage }) => {
               src={instagram}
               alt="instagram"
               onClick={handleInstagramClick}
+              style={{ cursor: "pointer" }}
+            />
+            <img
+              src={facebook}
+              alt="facebook"
+              onClick={handleFacebookClick}
               style={{ cursor: "pointer" }}
             />
             <img

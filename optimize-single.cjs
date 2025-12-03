@@ -9,7 +9,7 @@ const sizes = {
 };
 
 const images = [
-  'image copy 11.png'
+  'image copy 4.png'
 ];
 
 async function optimizeImage(fileName) {

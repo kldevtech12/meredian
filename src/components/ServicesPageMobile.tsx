@@ -9,6 +9,7 @@ import icon04 from "../assets/04M.svg";
 import arrowLeft from "../assets/arrow-left.svg";
 import arrowRight from "../assets/arrow-right.svg";
 import instagram from "../assets/instagram.svg";
+import facebook from "../assets/facebook.svg";
 import telegram from "../assets/telegram.svg";
 import whatsapp from "../assets/whatsapp.svg";
 import mail from "../assets/mail.svg";
@@ -54,6 +55,9 @@ const ServicesPageMobile: React.FC<ServicePageProps> = ({ typePage }) => {
   const [currentTranslate, setCurrentTranslate] = useState(0);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [shouldHideAll, setShouldHideAll] = useState(false);
+  const [carouselImages, setCarouselImages] = useState<string[]>([]);
+  const [currentCarouselIndex, setCurrentCarouselIndex] = useState(0);
+  const [isCarouselAnimating, setIsCarouselAnimating] = useState(false);
   const tasksContainerRef = useRef<HTMLDivElement>(null);
   const [isTasksInView, setIsTasksInView] = useState(false);
   const qualitiesRef = useRef<HTMLDivElement>(null);
@@ -309,6 +313,15 @@ const ServicesPageMobile: React.FC<ServicePageProps> = ({ typePage }) => {
   }, [typePage, typedData]);
 
   useEffect(() => {
+    if (typedData?.[typePage]?.carouselImages) {
+      const images = typedData[typePage].carouselImages.map((imageName: string) =>
+        getImageUrl(imageName)
+      );
+      setCarouselImages(images);
+    }
+  }, [typePage, typedData]);
+
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
@@ -344,6 +357,16 @@ const ServicesPageMobile: React.FC<ServicePageProps> = ({ typePage }) => {
 
     return () => clearInterval(timer);
   }, [currentWhiteImageIndex]);
+
+  useEffect(() => {
+    if (carouselImages.length > 1) {
+      const timer = setInterval(() => {
+        nextCarouselImage();
+      }, 4000);
+
+      return () => clearInterval(timer);
+    }
+  }, [carouselImages.length, currentCarouselIndex]);
 
   useEffect(() => {
     if (whiteContainerImages.length === 0) return;
@@ -400,6 +423,34 @@ const ServicesPageMobile: React.FC<ServicePageProps> = ({ typePage }) => {
       );
       setTimeout(() => setIsAnimating(false), 300);
       setTimeout(() => setShouldHideAll(false), 16);
+    }
+  };
+
+  const nextCarouselImage = () => {
+    if (carouselImages.length > 0 && !isCarouselAnimating) {
+      setIsCarouselAnimating(true);
+      setCurrentCarouselIndex((prev) =>
+        prev === carouselImages.length - 1 ? 0 : prev + 1
+      );
+      setTimeout(() => setIsCarouselAnimating(false), 500);
+    }
+  };
+
+  const prevCarouselImage = () => {
+    if (carouselImages.length > 0 && !isCarouselAnimating) {
+      setIsCarouselAnimating(true);
+      setCurrentCarouselIndex((prev) =>
+        prev === 0 ? carouselImages.length - 1 : prev - 1
+      );
+      setTimeout(() => setIsCarouselAnimating(false), 500);
+    }
+  };
+
+  const goToCarouselSlide = (index: number) => {
+    if (!isCarouselAnimating && index !== currentCarouselIndex) {
+      setIsCarouselAnimating(true);
+      setCurrentCarouselIndex(index);
+      setTimeout(() => setIsCarouselAnimating(false), 500);
     }
   };
 
@@ -518,6 +569,10 @@ const ServicesPageMobile: React.FC<ServicePageProps> = ({ typePage }) => {
     window.open("https://www.instagram.com/meridian_company/", "_blank");
   };
 
+  const handleFacebookClick = () => {
+    window.open("https://www.facebook.com/profile.php?id=61576014290920", "_blank");
+  };
+
   const handleTelegramClick = () => {
     window.open("https://t.me/account", "_blank");
   };
@@ -573,7 +628,57 @@ const ServicesPageMobile: React.FC<ServicePageProps> = ({ typePage }) => {
             variants={photoSlideIn}
           >
             <div className={styles.imageContainer1}>
-              <img src={mainImageSrc} alt="house" loading="lazy" />
+              {carouselImages.length > 1 ? (
+                <div className={styles.carouselWrapper}>
+                  <div className={styles.carousel}>
+                    {carouselImages.map((image, index) => (
+                      <div
+                        key={index}
+                        className={`${styles.carouselSlide} ${
+                          index === currentCarouselIndex ? styles.active : ""
+                        }`}
+                      >
+                        <img
+                          src={image}
+                          alt={`design ${index + 1}`}
+                          loading="lazy"
+                        />
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className={styles.carouselControls}>
+                    <button
+                      className={styles.carouselBtn}
+                      onClick={prevCarouselImage}
+                      disabled={isCarouselAnimating || carouselImages.length === 0}
+                    >
+                      <img src={arrowLeft} alt="previous" loading="lazy" />
+                    </button>
+                    <button
+                      className={styles.carouselBtn}
+                      onClick={nextCarouselImage}
+                      disabled={isCarouselAnimating || carouselImages.length === 0}
+                    >
+                      <img src={arrowRight} alt="next" loading="lazy" />
+                    </button>
+                  </div>
+
+                  <div className={styles.carouselDots}>
+                    {carouselImages.map((_, index) => (
+                      <button
+                        key={index}
+                        className={`${styles.carouselDot} ${
+                          index === currentCarouselIndex ? styles.active : ""
+                        }`}
+                        onClick={() => goToCarouselSlide(index)}
+                      />
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <img src={mainImageSrc} alt="house" loading="lazy" />
+              )}
             </div>
           </motion.div>
 
@@ -1031,10 +1136,10 @@ const ServicesPageMobile: React.FC<ServicePageProps> = ({ typePage }) => {
           <div ref={downRef} className={styles.contactInfo}>
             <div className={styles.contacts}>
               <span onClick={handlePhoneClick} style={{ cursor: "pointer" }}>
-                +48 796 440 622
+                +48 531 050 050
               </span>
               <span onClick={handleEmailClick} style={{ cursor: "pointer" }}>
-                meridian.eu.office@gmail.com
+                biuro@meridian-group.info
               </span>
             </div>
 
@@ -1058,6 +1163,13 @@ const ServicesPageMobile: React.FC<ServicePageProps> = ({ typePage }) => {
               src={instagram}
               alt="instagram"
               onClick={handleInstagramClick}
+              style={{ cursor: "pointer" }}
+              loading="lazy"
+            />
+            <img
+              src={facebook}
+              alt="facebook"
+              onClick={handleFacebookClick}
               style={{ cursor: "pointer" }}
               loading="lazy"
             />
