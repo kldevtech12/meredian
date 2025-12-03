@@ -3,8 +3,8 @@
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr 300px;
   border-bottom: 1px solid #FFF;
-  height: 106px;
-  overflow: visible;
+  height: 100px;
+  overflow: hidden;
   position: relative;
 }
 
@@ -20,11 +20,13 @@
   grid-column: 1;
 }
 
-.header .logo h1 {
-  height: 42px;
+.header .logo img {
+  height: 45px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
   margin-left: 80px;
   margin-right: 80px;
-  font-size: 24px;
 }
 
 .header .navigation {

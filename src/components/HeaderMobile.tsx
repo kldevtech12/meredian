@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router";
 import LeaveRequest from "./LeaveRequest";
 import data from "../data/index.json";
+import logo from "../assets/Mask group.svg";
 import styles from "./HeaderMobile.module.css";
 import { useAppContext } from "../contexts/AppContext";
 
@@ -61,7 +62,9 @@ const HeaderMobile: React.FC<HeaderProps> = ({ scrollFunction }) => {
       {showModal && <LeaveRequest setShowModal={setShowModal} />}
       <header className={styles.header}>
         <div className={styles.logo}>
-          <Link to={"/"}><h1>MERIDIAN</h1></Link>
+          <Link to={"/"}>
+            <img src={logo} alt="Meridian" />
+          </Link>
         </div>
 
         <button
