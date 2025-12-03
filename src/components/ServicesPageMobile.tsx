@@ -844,57 +844,66 @@ const ServicesPageMobile: React.FC<ServicePageProps> = ({ typePage }) => {
           </div>
 
           <div className={styles.imageContainer}>
-            <div className={styles.whiteCarouselContainer}>
-              <div className={styles.whiteCarousel}>
-                {whiteContainerImages.map((image, index) => (
-                  <div
-                    key={index}
-                    className={`${styles.whiteCarouselSlide} ${
-                      index === currentWhiteImageIndex ? styles.active : ""
-                    }`}
-                  >
-                    <img
-                      src={image}
-                      alt={`project ${index + 1}`}
-                      loading="lazy"
-                    />
-                  </div>
-                ))}
-              </div>
+            {whiteContainerImages.length > 1 ? (
+              <div className={styles.whiteCarouselContainer}>
+                <div className={styles.whiteCarousel}>
+                  {whiteContainerImages.map((image, index) => (
+                    <div
+                      key={index}
+                      className={`${styles.whiteCarouselSlide} ${
+                        index === currentWhiteImageIndex ? styles.active : ""
+                      }`}
+                    >
+                      <img
+                        src={image}
+                        alt={`project ${index + 1}`}
+                        loading="lazy"
+                      />
+                    </div>
+                  ))}
+                </div>
 
-              <div className={styles.whiteCarouselControls}>
-                <button
-                  className={styles.whiteCarouselBtn}
-                  onClick={prevWhiteImage}
-                  disabled={
-                    isWhiteAnimating || whiteContainerImages.length === 0
-                  }
-                >
-                  <img src={arrowLeft} alt="previous" loading="lazy" />
-                </button>
-                <button
-                  className={styles.whiteCarouselBtn}
-                  onClick={nextWhiteImage}
-                  disabled={
-                    isWhiteAnimating || whiteContainerImages.length === 0
-                  }
-                >
-                  <img src={arrowRight} alt="next" loading="lazy" />
-                </button>
-              </div>
-
-              <div className={styles.whiteCarouselDots}>
-                {whiteContainerImages.map((_, index) => (
+                <div className={styles.whiteCarouselControls}>
                   <button
-                    key={index}
-                    className={`${styles.whiteCarouselDot} ${
-                      index === currentWhiteImageIndex ? styles.active : ""
-                    }`}
-                    onClick={() => goToWhiteSlide(index)}
-                  />
-                ))}
+                    className={styles.whiteCarouselBtn}
+                    onClick={prevWhiteImage}
+                    disabled={
+                      isWhiteAnimating || whiteContainerImages.length === 0
+                    }
+                  >
+                    <img src={arrowLeft} alt="previous" loading="lazy" />
+                  </button>
+                  <button
+                    className={styles.whiteCarouselBtn}
+                    onClick={nextWhiteImage}
+                    disabled={
+                      isWhiteAnimating || whiteContainerImages.length === 0
+                    }
+                  >
+                    <img src={arrowRight} alt="next" loading="lazy" />
+                  </button>
+                </div>
+
+                <div className={styles.whiteCarouselDots}>
+                  {whiteContainerImages.map((_, index) => (
+                    <button
+                      key={index}
+                      className={`${styles.whiteCarouselDot} ${
+                        index === currentWhiteImageIndex ? styles.active : ""
+                      }`}
+                      onClick={() => goToWhiteSlide(index)}
+                    />
+                  ))}
+                </div>
               </div>
-            </div>
+            ) : whiteContainerImages.length === 1 ? (
+              <img
+                src={whiteContainerImages[0]}
+                alt="project"
+                loading="lazy"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+            ) : null}
           </div>
 
           <div className={styles.contactInfo}>
@@ -1074,6 +1083,16 @@ const ServicesPageMobile: React.FC<ServicePageProps> = ({ typePage }) => {
                     />
                   )
                 )}
+                {typedData[typePage].inPersonImages?.map(
+                  (imageName: string, index: number) => (
+                    <img
+                      key={`duplicate-${index}`}
+                      src={getImageUrl(imageName)}
+                      alt={`Person ${index + 1}`}
+                      loading="lazy"
+                    />
+                  )
+                )}
               </div>
               <div className={`${styles.inPersonsRow} ${styles.row2}`}>
                 {typedData[typePage].inPersonImages?.map(
@@ -1086,12 +1105,32 @@ const ServicesPageMobile: React.FC<ServicePageProps> = ({ typePage }) => {
                     />
                   )
                 )}
+                {typedData[typePage].inPersonImages?.map(
+                  (imageName: string, index: number) => (
+                    <img
+                      key={`duplicate-${index}`}
+                      src={getImageUrl(imageName)}
+                      alt={`Person ${index + 1}`}
+                      loading="lazy"
+                    />
+                  )
+                )}
               </div>
               <div className={`${styles.inPersonsRow} ${styles.row3}`}>
                 {typedData[typePage].inPersonImages?.map(
                   (imageName: string, index: number) => (
                     <img
                       key={index}
+                      src={getImageUrl(imageName)}
+                      alt={`Person ${index + 1}`}
+                      loading="lazy"
+                    />
+                  )
+                )}
+                {typedData[typePage].inPersonImages?.map(
+                  (imageName: string, index: number) => (
+                    <img
+                      key={`duplicate-${index}`}
                       src={getImageUrl(imageName)}
                       alt={`Person ${index + 1}`}
                       loading="lazy"
