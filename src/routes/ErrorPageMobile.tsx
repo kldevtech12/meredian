@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import type React from "react";
 import instagram from "../assets/instagram.svg";
+import facebook from "../assets/facebook.svg";
 import telegram from "../assets/telegram.svg";
 import whatsapp from "../assets/whatsapp.svg";
 import mail from "../assets/mail.svg";
