@@ -560,7 +560,10 @@ const ServicesPage: React.FC<ServicePageProps> = ({ typePage }) => {
       const actualIndex = startIndex + index;
       const imageIndex = actualIndex % 2;
       const imageName = imageIndex === 0 ? 'image copy 10.png' : 'image copy 12.png';
-      const imageSrc = `/src/assets/${imageName}`;
+      const imageSrc = new URL(
+        `../assets/${imageName}`,
+        import.meta.url
+      ).href;
       
       return (
         <img

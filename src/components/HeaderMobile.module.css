@@ -180,12 +180,8 @@
 }
 
 .arrow {
-  font-size: 24px;
+  font-size: 32px;
   transition: transform 0.3s ease;
-  border: 1px solid #000;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;

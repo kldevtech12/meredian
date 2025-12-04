@@ -45,7 +45,7 @@ const Header: React.FC<HeaderProps> = ({ scrollFunction }) => {
   };
 
   const handlePhoneClick = () => {
-    window.open("https://wa.me/48796440622", "_blank");
+    window.open("https://wa.me/48531050050", "_blank");
   };
 
   if (!currentData?.header?.navigation) {
@@ -121,7 +121,7 @@ const Header: React.FC<HeaderProps> = ({ scrollFunction }) => {
             onClick={handlePhoneClick} 
             style={{ cursor: "pointer" }}
           >
-            +48-796-440-622
+            +48-531-050-050
           </span>
           <div className={styles.languageContainer}>
             <span 

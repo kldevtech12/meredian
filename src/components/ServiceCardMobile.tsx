@@ -141,19 +141,20 @@ const ServiceCardMobile: React.FC<ServiceCardMobileProps> = ({
         <h2>{title}</h2>
         <div className={styles.description}>
           <div className={styles.formattedText}>{formatText(text)}</div>
+          <motion.button 
+            className={styles.btnContact} 
+            onClick={onContactClick}
+            initial="hidden"
+            animate="visible"
+            variants={buttonAnimation}
+            whileTap={{ scale: 0.95 }}
+          >
+            {buttonText}
+          </motion.button>
         </div>
       </motion.div>
 
-      <motion.button 
-        className={styles.btnContact} 
-        onClick={onContactClick}
-        initial="hidden"
-        animate="visible"
-        variants={buttonAnimation}
-        whileTap={{ scale: 0.95 }}
-      >
-        {buttonText}
-      </motion.button>
+      
     </motion.div>
   );
 };
