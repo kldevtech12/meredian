@@ -6,11 +6,11 @@
   padding: 16px;
   width: 250px;
   flex-shrink: 0;
-  border-right: 1px solid #FFF;
+  border-left: 1px solid #FFF;
 }
 
 .serviceCardMobile:first-child {
-  border-right: none;
+  border-left: none;
 }
 
 .serviceCardMobile img {
@@ -49,7 +49,6 @@
   font-family: "Roboto Regular";
   font-weight: 400;
   font-size: 12px;
-  margin-top: 16px;
 }
 
 .formattedText {

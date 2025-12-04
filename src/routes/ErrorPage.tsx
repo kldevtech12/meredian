@@ -106,7 +106,7 @@ const ErrorPage: React.FC = () => {
   };
 
   const handleInstagramClick = () => {
-    window.open("https://www.instagram.com/meridian_company/", "_blank");
+    window.open("https://www.instagram.com/meridian_group_pl?igsh=OXdyazhoMWs0Znli", "_blank");
   };
   
   const handleFacebookClick = () => {
