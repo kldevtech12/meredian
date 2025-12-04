@@ -4,7 +4,7 @@
   grid-template-columns: 1fr 1fr 1fr 300px;
   border-bottom: 1px solid #FFF;
   height: 100px;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
 }
 
@@ -80,7 +80,7 @@
   min-width: 250px;
   border-radius: 6px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  z-index: 1000;
+  z-index: 9999;
   padding: 8px 0;
   animation: dropdownFade 0.2s ease;
   padding-top: 8px;
@@ -183,7 +183,7 @@
   min-width: 80px;
   border-radius: 6px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  z-index: 1000;
+  z-index: 9999;
   padding: 8px 0;
   animation: dropdownFade 0.2s ease;
   margin-top: 5px;
