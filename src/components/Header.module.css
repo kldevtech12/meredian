@@ -18,15 +18,20 @@
   font-family: "Reem";
   border-right: 1px solid #FFF;
   grid-column: 1;
+  position: relative;
 }
 
 .header .logo img {
-  height: 45px;
+  height: 170px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
   margin-left: 80px;
   margin-right: 80px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .header .navigation {

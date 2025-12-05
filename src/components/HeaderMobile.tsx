@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router";
 import LeaveRequest from "./LeaveRequest";
 import data from "../data/index.json";
-import logo from "../assets/Mask group.svg";
+import logo from "../assets/logo.svg";
 import styles from "./HeaderMobile.module.css";
 import { useAppContext } from "../contexts/AppContext";
 
@@ -108,13 +108,23 @@ const HeaderMobile: React.FC<HeaderProps> = ({ scrollFunction }) => {
                   onClick={toggleServices}
                 >
                   {currentData.navigation[0].title}
-                  <span
+                  <svg
                     className={`${styles.arrow} ${
                       isServicesOpen ? styles.arrowUp : ""
                     }`}
+                    width="18"
+                    height="10"
+                    viewBox="0 0 18 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    ˅
-                  </span>
+                    <path
+                      d="M0.707092 0.707107L8.70709 8.70711L16.7071 0.707107"
+                      stroke="black"
+                      strokeWidth="2"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
                 </button>
                 {isServicesOpen && (
                   <div className={styles.servicesList}>
@@ -171,13 +181,23 @@ const HeaderMobile: React.FC<HeaderProps> = ({ scrollFunction }) => {
               <div className={styles.languageDropdown}>
                 <div className={styles.languageButton}>
                   {language.toUpperCase()}
-                  <span
+                  <svg
                     className={`${styles.arrow} ${
                       isLanguageOpen ? styles.arrowUp : ""
                     }`}
+                    width="18"
+                    height="10"
+                    viewBox="0 0 18 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    ˅
-                  </span>
+                    <path
+                      d="M0.707092 0.707107L8.70709 8.70711L16.7071 0.707107"
+                      stroke="black"
+                      strokeWidth="2"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
                 </div>
                 {isLanguageOpen && (
                   <div className={styles.languageList}>

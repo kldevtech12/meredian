@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import LeaveRequest from "./LeaveRequest";
 import data from "../data/index.json";
 import arrow from "../assets/arrow-down.svg";
-import logo from "../assets/Mask group.svg";
+import logo from "../assets/logo.svg";
 import styles from "./Header.module.css";
 import { useAppContext } from "../contexts/AppContext";
 import type { AppData } from "../types/types";
